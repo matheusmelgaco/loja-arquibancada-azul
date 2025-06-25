@@ -6,89 +6,39 @@ import ProductCard from './ProductCard';
 const Catalog = () => {
   const [activeFilter, setActiveFilter] = useState('Todos');
 
-  const filters = ['Todos', '2025/26', '2024/25', '2023/24', '2022/21', '2021/22', 'Centenário', 'Retrô', 'Kids', 'Treino'];
+  const filters = ['Todos', '2025/26', '2024/25', '2023/24', '2022/23', '2021/22 Centenário', 'Retrô', 'Infantil', 'Treino'];
+
+  // Criando produtos com as quantidades solicitadas
+  const createProducts = (category: string, count: number, basePrice: string) => {
+    const products = [];
+    for (let i = 1; i <= count; i++) {
+      products.push({
+        id: `${category.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${i}`,
+        name: `Camisa Cruzeiro ${category} - Modelo ${i}`,
+        price: basePrice,
+        category: category,
+        images: [
+          '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+          '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
+          '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
+          '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+        ],
+        isHighlight: i === 1,
+        description: `Camisa oficial do Cruzeiro ${category}. Qualidade premium com tecnologia de última geração.`
+      });
+    }
+    return products;
+  };
 
   const products = [
-    {
-      id: 'camisa-cruzeiro-i-2025-26',
-      name: 'Camisa Cruzeiro I 2025/26 - Adidas',
-      price: 'R$ 189,90',
-      category: '2025/26',
-      images: [
-        '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-        '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-        '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-        '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-      ],
-      isHighlight: true,
-      description: 'Nova camisa oficial do Cruzeiro para a temporada 2025/26. Produzida pela Adidas com tecnologia Climacool.'
-    },
-    {
-      id: 'camisa-cruzeiro-retro-1997',
-      name: 'Camisa Cruzeiro Retrô 1997 - Tríplice Coroa',
-      price: 'R$ 149,90',
-      category: 'Retrô',
-      images: [
-        '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-        '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-        '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-        '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-      ],
-      isHighlight: true,
-      description: 'Camisa retrô comemorativa da conquista da Tríplice Coroa em 1997. Peça histórica para colecionadores.'
-    },
-    {
-      id: 'camisa-cruzeiro-ii-2024-25',
-      name: 'Camisa Cruzeiro II 2024/25 - Away',
-      price: 'R$ 169,90',
-      category: '2024/25',
-      images: [
-        '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-        '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-        '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-        '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-      ],
-      description: 'Camisa reserva do Cruzeiro para jogos fora de casa. Design moderno e confortável.'
-    },
-    {
-      id: 'kit-cruzeiro-2025',
-      name: 'Kit Completo Cruzeiro 2025 (Camisa + Short)',
-      price: 'R$ 249,90',
-      category: '2025/26',
-      images: [
-        '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-        '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-        '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-        '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-      ],
-      description: 'Kit completo com camisa e short oficiais do Cruzeiro 2025. Perfeito para jogos e treinos.'
-    },
-    {
-      id: 'camisa-cruzeiro-retro-2003',
-      name: 'Camisa Cruzeiro Retrô 2003 - Centenário',
-      price: 'R$ 159,90',
-      category: 'Centenário',
-      images: [
-        '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-        '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-        '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-        '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-      ],
-      description: 'Camisa especial do centenário do Cruzeiro em 2003. Edição limitada para colecionadores.'
-    },
-    {
-      id: 'camisa-cruzeiro-treino-2025',
-      name: 'Camisa de Treino Cruzeiro 2025',
-      price: 'R$ 119,90',
-      category: 'Treino',
-      images: [
-        '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-        '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-        '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-        '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-      ],
-      description: 'Camisa de treino oficial do Cruzeiro. Ideal para atividades físicas e uso casual.'
-    }
+    ...createProducts('2025/26', 4, 'R$ 189,90'),
+    ...createProducts('2024/25', 7, 'R$ 169,90'),
+    ...createProducts('2023/24', 8, 'R$ 159,90'),
+    ...createProducts('2022/23', 6, 'R$ 149,90'),
+    ...createProducts('2021/22 Centenário', 6, 'R$ 179,90'),
+    ...createProducts('Retrô', 6, 'R$ 139,90'),
+    ...createProducts('Infantil', 3, 'R$ 89,90'),
+    ...createProducts('Treino', 12, 'R$ 119,90')
   ];
 
   const filteredProducts = activeFilter === 'Todos' 
@@ -114,7 +64,7 @@ const Catalog = () => {
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`px-4 py-2 text-sm rounded-lg font-montserrat font-bold transition-all duration-300 ${
+              className={`px-3 py-2 text-sm rounded-lg font-montserrat font-bold transition-all duration-300 ${
                 activeFilter === filter
                   ? 'bg-[#0038A8] text-white shadow-lg'
                   : 'bg-gray-100 text-gray-700 hover:bg-[#1E7ACB] hover:text-white'
@@ -125,8 +75,8 @@ const Catalog = () => {
           ))}
         </div>
 
-        {/* Products Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Products Grid - 3x3 layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredProducts.map((product) => (
             <Link key={product.id} to={`/produto/${product.id}`}>
               <ProductCard

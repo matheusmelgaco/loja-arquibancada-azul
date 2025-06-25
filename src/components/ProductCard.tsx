@@ -25,11 +25,11 @@ const ProductCard = ({ id, name, price, images, category, isHighlight }: Product
   return (
     <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden cursor-pointer">
       {/* Image Gallery */}
-      <div className="relative h-56 overflow-hidden">
+      <div className="relative h-48 overflow-hidden">
         <img 
           src={images[currentImage]} 
           alt={name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-contain bg-gray-50 group-hover:scale-105 transition-transform duration-300"
         />
         
         {/* Navigation arrows */}
@@ -84,10 +84,10 @@ const ProductCard = ({ id, name, price, images, category, isHighlight }: Product
 
       {/* Product Info */}
       <div className="p-4">
-        <h3 className="font-montserrat font-bold text-base text-[#012F60] mb-2 line-clamp-2">
+        <h3 className="font-montserrat font-bold text-sm text-[#012F60] mb-2 line-clamp-2">
           {name}
         </h3>
-        <p className="font-poppins text-xl font-bold text-[#0038A8] mb-3">
+        <p className="font-poppins text-lg font-bold text-[#0038A8] mb-3">
           a partir de {price}
         </p>
       </div>
