@@ -10,50 +10,44 @@ const Product = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [showSizeChart, setShowSizeChart] = useState(false);
 
-  // Mock data - em produção isso viria de uma API ou banco de dados
-  const products = [
-    {
-      id: 'camisa-cruzeiro-i-2025-26',
-      name: 'Camisa Cruzeiro I 2025/26 - Adidas',
-      price: 'R$ 189,90',
-      category: '2025/26',
-      images: [
-        '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-        '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-        '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-        '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-      ],
-      isHighlight: true,
-      description: 'Nova camisa oficial do Cruzeiro para a temporada 2025/26. Produzida pela Adidas com tecnologia Climacool que oferece máximo conforto e respirabilidade. Tecido de alta qualidade com bordados oficiais do clube.',
-      features: [
-        'Tecnologia Climacool da Adidas',
-        'Tecido 100% poliéster',
-        'Bordados oficiais do Cruzeiro',
-        'Gola em V tradicional',
-        'Disponível em todos os tamanhos'
-      ]
-    },
-    {
-      id: 'camisa-cruzeiro-retro-1997',
-      name: 'Camisa Cruzeiro Retrô 1997 - Tríplice Coroa',
-      price: 'R$ 149,90',
-      category: 'Retrô',
-      images: [
-        '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-        '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-        '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-        '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-      ],
-      isHighlight: true,
-      description: 'Camisa retrô comemorativa da conquista histórica da Tríplice Coroa em 1997. Uma peça única para colecionadores e torcedores que viveram esse momento histórico.',
-      features: [
-        'Edição comemorativa Tríplice Coroa',
-        'Tecido premium vintage',
-        'Patch especial bordado',
-        'Numeração e nomes disponíveis',
-        'Peça de colecionador'
-      ]
+  // Same product generation logic as Catalog component
+  const createProducts = (category: string, count: number, basePrice: string) => {
+    const products = [];
+    for (let i = 1; i <= count; i++) {
+      products.push({
+        id: `${category.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${i}`,
+        name: `Camisa Cruzeiro ${category} - Modelo ${i}`,
+        price: basePrice,
+        category: category,
+        images: [
+          '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+          '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
+          '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
+          '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+        ],
+        isHighlight: i === 1,
+        description: `Camisa oficial do Cruzeiro ${category}. Qualidade premium com tecnologia de última geração para máximo conforto e durabilidade.`,
+        features: [
+          'Tecnologia Dri-FIT para absorção do suor',
+          'Tecido 100% poliéster de alta qualidade',
+          'Bordados oficiais do Cruzeiro',
+          'Gola em V confortável',
+          'Disponível em todos os tamanhos'
+        ]
+      });
     }
+    return products;
+  };
+
+  const products = [
+    ...createProducts('2025/26', 4, 'R$ 189,90'),
+    ...createProducts('2024/25', 7, 'R$ 169,90'),
+    ...createProducts('2023/24', 8, 'R$ 159,90'),
+    ...createProducts('2022/23', 6, 'R$ 149,90'),
+    ...createProducts('2021/22 Centenário', 6, 'R$ 179,90'),
+    ...createProducts('Retrô', 6, 'R$ 139,90'),
+    ...createProducts('Infantil', 3, 'R$ 89,90'),
+    ...createProducts('Treino', 12, 'R$ 119,90')
   ];
 
   const product = products.find(p => p.id === id);
