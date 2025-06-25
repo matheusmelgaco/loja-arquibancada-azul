@@ -1,8 +1,8 @@
 
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import Benefits from '../components/Benefits';
 import Catalog from '../components/Catalog';
+import Benefits from '../components/Benefits';
 import PromoBanner from '../components/PromoBanner';
 import InstagramFeed from '../components/InstagramFeed';
 import Testimonials from '../components/Testimonials';
@@ -15,8 +15,8 @@ const Index = () => {
     <div className="min-h-screen bg-[#F7F7F5]">
       <Header />
       <Hero />
-      <Benefits />
       <Catalog />
+      <Benefits />
       <PromoBanner />
       <InstagramFeed />
       <Testimonials />
