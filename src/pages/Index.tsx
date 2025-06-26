@@ -3,7 +3,6 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Catalog from '../components/Catalog';
 import Benefits from '../components/Benefits';
-import PromoBanner from '../components/PromoBanner';
 import InstagramFeed from '../components/InstagramFeed';
 import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
@@ -17,7 +16,6 @@ const Index = () => {
       <Hero />
       <Catalog />
       <Benefits />
-      <PromoBanner />
       <InstagramFeed />
       <Testimonials />
       <FAQ />

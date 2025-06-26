@@ -1,10 +1,25 @@
 
 import { ShoppingCart, Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const handleNavClick = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      // If not on home page, navigate to home first then scroll
+      window.location.href = `/#${sectionId}`;
+    } else {
+      // If on home page, scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="bg-[#0038A8] text-white shadow-lg sticky top-0 z-50">
@@ -22,10 +37,20 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link to="/#catalogo" className="hover:text-[#D9A642] transition-colors">Catálogo</Link>
-            <Link to="/#sobre" className="hover:text-[#D9A642] transition-colors">Sobre</Link>
-            <Link to="/#faq" className="hover:text-[#D9A642] transition-colors">FAQ</Link>
-            <Link to="/#contato" className="hover:text-[#D9A642] transition-colors">Contato</Link>
+            <button 
+              onClick={() => handleNavClick('catalogo')} 
+              className="hover:text-[#D9A642] transition-colors"
+            >
+              Catálogo
+            </button>
+            <Link to="/sobre" className="hover:text-[#D9A642] transition-colors">Sobre</Link>
+            <button 
+              onClick={() => handleNavClick('faq')} 
+              className="hover:text-[#D9A642] transition-colors"
+            >
+              FAQ
+            </button>
+            <Link to="/contato" className="hover:text-[#D9A642] transition-colors">Contato</Link>
           </nav>
 
           {/* WhatsApp CTA */}
@@ -49,10 +74,24 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden py-4 border-t border-[#1E7ACB]">
             <div className="flex flex-col space-y-4">
-              <Link to="/#catalogo" className="hover:text-[#D9A642] transition-colors">Catálogo</Link>
-              <Link to="/#sobre" className="hover:text-[#D9A642] transition-colors">Sobre</Link>
-              <Link to="/#faq" className="hover:text-[#D9A642] transition-colors">FAQ</Link>
-              <Link to="/#contato" className="hover:text-[#D9A642] transition-colors">Contato</Link>
+              <button 
+                onClick={() => handleNavClick('catalogo')} 
+                className="hover:text-[#D9A642] transition-colors text-left"
+              >
+                Catálogo
+              </button>
+              <Link to="/sobre" className="hover:text-[#D9A642] transition-colors" onClick={() => setIsMenuOpen(false)}>
+                Sobre
+              </Link>
+              <button 
+                onClick={() => handleNavClick('faq')} 
+                className="hover:text-[#D9A642] transition-colors text-left"
+              >
+                FAQ
+              </button>
+              <Link to="/contato" className="hover:text-[#D9A642] transition-colors" onClick={() => setIsMenuOpen(false)}>
+                Contato
+              </Link>
               <a 
                 href="https://wa.me/5531999999999?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
                 className="bg-[#D9A642] text-[#012F60] px-4 py-2 rounded-lg font-montserrat font-bold text-center hover:bg-yellow-400 transition-colors"
