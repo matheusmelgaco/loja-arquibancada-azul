@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, ArrowLeft, Star } from 'lucide-react';
@@ -192,18 +191,14 @@ const Product = () => {
               </p>
             </div>
 
-            <div>
-              <h3 className="font-montserrat font-bold text-lg text-[#012F60] mb-3">
-                Características
+            {/* Personalization Info */}
+            <div className="bg-gray-50 p-4 rounded-lg border">
+              <h3 className="font-montserrat font-bold text-sm text-[#012F60] mb-2">
+                💫 Personalização Disponível
               </h3>
-              <ul className="space-y-2">
-                {product.features.map((feature, index) => (
-                  <li key={index} className="font-poppins text-gray-700 flex items-center">
-                    <span className="w-2 h-2 bg-[#D9A642] rounded-full mr-3"></span>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+              <p className="font-poppins text-sm text-gray-600">
+                Adicione seu nome e número por apenas <span className="font-bold text-[#D9A642]">+R$ 25,00</span>
+              </p>
             </div>
 
             {/* Size Chart Button */}
