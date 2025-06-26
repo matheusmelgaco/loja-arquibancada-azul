@@ -62,12 +62,9 @@ const Footer = () => {
               <a href="#faq" className="block font-poppins text-sm hover:text-[#D9A642] transition-colors">
                 FAQ
               </a>
-              <a href="#" className="block font-poppins text-sm hover:text-[#D9A642] transition-colors">
-                Políticas de Troca
-              </a>
-              <a href="#" className="block font-poppins text-sm hover:text-[#D9A642] transition-colors">
-                Política de Privacidade
-              </a>
+              <p className="font-poppins text-sm text-blue-200">
+                Não fazemos trocas
+              </p>
             </div>
           </div>
 

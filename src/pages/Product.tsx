@@ -50,7 +50,6 @@ const Product = () => {
   ];
 
   const product = products.find(p => p.id === id);
-  const currentIndex = products.findIndex(p => p.id === id);
   
   if (!product) {
     return (
@@ -73,16 +72,6 @@ const Product = () => {
 
   const prevImage = () => {
     setCurrentImage((prev) => (prev - 1 + product.images.length) % product.images.length);
-  };
-
-  const nextProduct = () => {
-    const nextIndex = (currentIndex + 1) % products.length;
-    return products[nextIndex];
-  };
-
-  const prevProduct = () => {
-    const prevIndex = (currentIndex - 1 + products.length) % products.length;
-    return products[prevIndex];
   };
 
   const sizeChart = [
@@ -191,13 +180,18 @@ const Product = () => {
               </p>
             </div>
 
-            {/* Personalization Info */}
-            <div className="bg-gray-50 p-4 rounded-lg border">
-              <h3 className="font-montserrat font-bold text-sm text-[#012F60] mb-2">
-                💫 Personalização Disponível
-              </h3>
-              <p className="font-poppins text-sm text-gray-600">
-                Adicione seu nome e número por apenas <span className="font-bold text-[#D9A642]">+R$ 25,00</span>
+            {/* Personalization Info (more discreet) */}
+            <div className="text-sm text-gray-600 border-l-4 border-[#D9A642] pl-3">
+              <p>Personalização disponível por +R$ 25,00</p>
+            </div>
+
+            {/* No Exchange Policy */}
+            <div className="bg-red-50 border border-red-200 p-3 rounded-lg">
+              <p className="font-montserrat font-bold text-sm text-red-800 mb-1">
+                ⚠️ Política de Trocas
+              </p>
+              <p className="font-poppins text-sm text-red-700">
+                Não fazemos trocas. Consulte a tabela de tamanhos antes da compra.
               </p>
             </div>
 
@@ -249,22 +243,6 @@ const Product = () => {
             >
               💬 Comprar no WhatsApp
             </a>
-
-            {/* Product Navigation */}
-            <div className="flex space-x-4">
-              <Link 
-                to={`/produto/${prevProduct().id}`}
-                className="flex-1 bg-gray-100 text-[#012F60] py-3 rounded-lg font-montserrat font-bold text-center hover:bg-gray-200 transition-colors"
-              >
-                ← Produto Anterior
-              </Link>
-              <Link 
-                to={`/produto/${nextProduct().id}`}
-                className="flex-1 bg-gray-100 text-[#012F60] py-3 rounded-lg font-montserrat font-bold text-center hover:bg-gray-200 transition-colors"
-              >
-                Próximo Produto →
-              </Link>
-            </div>
           </div>
         </div>
       </div>
