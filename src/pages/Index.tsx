@@ -1,5 +1,6 @@
 
 import Header from '../components/Header';
+import PromoBannerInauguration from '../components/PromoBannerInauguration';
 import Hero from '../components/Hero';
 import Catalog from '../components/Catalog';
 import Benefits from '../components/Benefits';
@@ -13,6 +14,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-[#F7F7F5]">
       <Header />
+      <PromoBannerInauguration />
       <Hero />
       <Catalog />
       <Benefits />
