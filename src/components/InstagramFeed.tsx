@@ -1,6 +1,6 @@
 
 const InstagramFeed = () => {
-  // Mock Instagram posts - em um cenário real, você integraria com a API do Instagram
+  // Mock Instagram posts
   const mockPosts = [
     {
       id: 1,
@@ -35,27 +35,27 @@ const InstagramFeed = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-8 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="font-montserrat font-extrabold text-3xl md:text-4xl text-[#012F60] mb-4">
+        <div className="text-center mb-8">
+          <h2 className="font-montserrat font-extrabold text-xl md:text-2xl text-[#012F60] mb-2">
             📸 NOS SIGA NO INSTAGRAM
           </h2>
-          <p className="font-poppins text-lg text-gray-600 max-w-2xl mx-auto mb-6">
+          <p className="font-poppins text-sm text-gray-600 max-w-2xl mx-auto mb-4">
             Veja nossos lançamentos em primeira mão e acompanhe novidades exclusivas
           </p>
           <a 
             href="https://instagram.com/arquibancada.azul"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-montserrat font-bold hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
+            className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg font-montserrat font-bold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 text-sm"
           >
             @arquibancada.azul
           </a>
         </div>
 
         {/* Instagram Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
           {mockPosts.map((post) => (
             <a
               key={post.id}
@@ -71,8 +71,8 @@ const InstagramFeed = () => {
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
                 <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center p-2">
-                  <div className="text-2xl mb-2">📸</div>
-                  <p className="text-sm font-poppins">{post.caption}</p>
+                  <div className="text-xl mb-1">📸</div>
+                  <p className="text-xs font-poppins">{post.caption}</p>
                 </div>
               </div>
             </a>

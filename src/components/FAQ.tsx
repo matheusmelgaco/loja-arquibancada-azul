@@ -49,37 +49,37 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-16 bg-[#F7F7F5]">
+    <section id="faq" className="py-8 bg-[#F7F7F5]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="font-montserrat font-extrabold text-3xl md:text-4xl text-[#012F60] mb-4">
+        <div className="text-center mb-8">
+          <h2 className="font-montserrat font-extrabold text-xl md:text-2xl text-[#012F60] mb-2">
             ❓ PERGUNTAS FREQUENTES
           </h2>
-          <p className="font-poppins text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="font-poppins text-sm text-gray-600 max-w-2xl mx-auto">
             Tire suas dúvidas sobre produtos, prazos, pagamentos e muito mais
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-4">
+        <div className="max-w-3xl mx-auto space-y-3">
           {faqs.map((faq, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+                className="w-full px-4 py-3 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
               >
-                <h3 className="font-montserrat font-bold text-[#012F60] text-lg">
+                <h3 className="font-montserrat font-bold text-[#012F60] text-sm md:text-base">
                   {faq.question}
                 </h3>
                 {openItems.includes(index) ? (
-                  <ChevronUp className="text-[#0038A8] flex-shrink-0" />
+                  <ChevronUp className="text-[#0038A8] flex-shrink-0 w-4 h-4" />
                 ) : (
-                  <ChevronDown className="text-[#0038A8] flex-shrink-0" />
+                  <ChevronDown className="text-[#0038A8] flex-shrink-0 w-4 h-4" />
                 )}
               </button>
               
               {openItems.includes(index) && (
-                <div className="px-6 pb-4 animate-fade-in">
-                  <p className="font-poppins text-gray-700 leading-relaxed">
+                <div className="px-4 pb-3 animate-fade-in">
+                  <p className="font-poppins text-gray-700 leading-relaxed text-sm">
                     {faq.answer}
                   </p>
                 </div>
@@ -89,13 +89,13 @@ const FAQ = () => {
         </div>
 
         {/* Contact CTA */}
-        <div className="text-center mt-12">
-          <p className="font-poppins text-gray-600 mb-4">
+        <div className="text-center mt-8">
+          <p className="font-poppins text-gray-600 mb-3 text-sm">
             Não encontrou sua resposta?
           </p>
           <a 
             href="https://wa.me/5531999999999?text=Tenho%20uma%20dúvida%20sobre%20os%20produtos"
-            className="inline-block bg-[#0038A8] text-white px-8 py-4 rounded-lg font-montserrat font-bold text-lg hover:bg-[#012F60] transform hover:scale-105 transition-all duration-300 shadow-lg"
+            className="inline-block bg-[#0038A8] text-white px-6 py-3 rounded-lg font-montserrat font-bold text-sm hover:bg-[#012F60] transform hover:scale-105 transition-all duration-300 shadow-lg"
           >
             💬 Falar no WhatsApp
           </a>

@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ProductCard from './ProductCard';
@@ -15,7 +14,7 @@ import {
 const Catalog = () => {
   const [activeFilter, setActiveFilter] = useState('Todos');
   const [currentPage, setCurrentPage] = useState(1);
-  const ITEMS_PER_PAGE = 9;
+  const ITEMS_PER_PAGE = 8;
 
   const filters = ['Todos', '2025/26', '2024/25', '2023/24', '2022/23', '2021/22 Centenário', 'Retrô', 'Infantil', 'Treino'];
 
@@ -104,8 +103,8 @@ const Catalog = () => {
           ))}
         </div>
 
-        {/* Products Grid - 3x3 layout */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+        {/* Products Grid - 2x4 layout for mobile, 4x2 for larger screens */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
           {currentProducts.map((product) => (
             <Link key={product.id} to={`/produto/${product.id}`}>
               <ProductCard
