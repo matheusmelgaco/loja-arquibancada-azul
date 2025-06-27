@@ -23,9 +23,9 @@ const ProductCard = ({ id, name, price, images, category, isHighlight }: Product
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden cursor-pointer">
+    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group overflow-hidden cursor-pointer">
       {/* Image Gallery */}
-      <div className="relative h-48 overflow-hidden">
+      <div className="relative h-32 sm:h-40 overflow-hidden">
         <img 
           src={images[currentImage]} 
           alt={name}
@@ -40,54 +40,54 @@ const ProductCard = ({ id, name, price, images, category, isHighlight }: Product
                 e.preventDefault();
                 prevImage();
               }}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
+              className="absolute left-1 top-1/2 -translate-y-1/2 bg-black/50 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
             >
-              <ChevronLeft size={16} />
+              <ChevronLeft size={12} />
             </button>
             <button 
               onClick={(e) => {
                 e.preventDefault();
                 nextImage();
               }}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
+              className="absolute right-1 top-1/2 -translate-y-1/2 bg-black/50 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
             >
-              <ChevronRight size={16} />
+              <ChevronRight size={12} />
             </button>
           </>
         )}
 
         {/* Image indicators */}
         {images.length > 1 && (
-          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-1">
+          <div className="absolute bottom-1 left-1/2 -translate-x-1/2 flex space-x-1">
             {images.map((_, index) => (
               <div 
                 key={index}
-                className={`w-2 h-2 rounded-full ${index === currentImage ? 'bg-[#D9A642]' : 'bg-white/50'}`}
+                className={`w-1.5 h-1.5 rounded-full ${index === currentImage ? 'bg-[#D9A642]' : 'bg-white/50'}`}
               />
             ))}
           </div>
         )}
 
         {/* Category badge */}
-        <div className="absolute top-2 left-2 bg-[#0038A8] text-white px-2 py-1 rounded text-xs font-montserrat font-bold">
+        <div className="absolute top-1 left-1 bg-[#0038A8] text-white px-1.5 py-0.5 rounded text-xs font-montserrat font-bold">
           {category}
         </div>
 
         {/* Highlight badge */}
         {isHighlight && (
-          <div className="absolute top-2 right-2 bg-[#D9A642] text-[#012F60] px-2 py-1 rounded text-xs font-montserrat font-bold flex items-center">
-            <Star size={12} className="mr-1" fill="currentColor" />
+          <div className="absolute top-1 right-1 bg-[#D9A642] text-[#012F60] px-1.5 py-0.5 rounded text-xs font-montserrat font-bold flex items-center">
+            <Star size={10} className="mr-0.5" fill="currentColor" />
             Destaque
           </div>
         )}
       </div>
 
       {/* Product Info */}
-      <div className="p-4">
-        <h3 className="font-montserrat font-bold text-sm text-[#012F60] mb-2 line-clamp-2">
+      <div className="p-3">
+        <h3 className="font-montserrat font-bold text-xs text-[#012F60] mb-1 line-clamp-2">
           {name}
         </h3>
-        <p className="font-poppins text-lg font-bold text-[#0038A8] mb-3">
+        <p className="font-poppins text-sm font-bold text-[#0038A8] mb-2">
           a partir de {price}
         </p>
       </div>

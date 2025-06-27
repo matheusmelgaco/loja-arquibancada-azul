@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, ArrowLeft, Star } from 'lucide-react';
@@ -55,8 +56,8 @@ const Product = () => {
     return (
       <div className="min-h-screen bg-[#F7F7F5]">
         <Header />
-        <div className="container mx-auto px-4 py-16 text-center">
-          <h1 className="text-2xl font-bold text-[#012F60] mb-4">Produto não encontrado</h1>
+        <div className="container mx-auto px-4 py-8 text-center">
+          <h1 className="text-xl font-bold text-[#012F60] mb-4">Produto não encontrado</h1>
           <Link to="/" className="text-[#0038A8] hover:underline">
             Voltar para a página inicial
           </Link>
@@ -87,52 +88,52 @@ const Product = () => {
     <div className="min-h-screen bg-[#F7F7F5]">
       <Header />
       
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-4">
         {/* Back Button */}
         <Link 
           to="/" 
-          className="inline-flex items-center text-[#0038A8] hover:text-[#012F60] mb-6 font-montserrat font-bold"
+          className="inline-flex items-center text-[#0038A8] hover:text-[#012F60] mb-4 font-montserrat font-bold text-sm"
         >
-          <ArrowLeft size={20} className="mr-2" />
+          <ArrowLeft size={16} className="mr-1" />
           Voltar ao catálogo
         </Link>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {/* Image Gallery */}
-          <div className="space-y-4">
-            <div className="relative h-96 bg-white rounded-xl overflow-hidden shadow-lg">
+          <div className="space-y-3">
+            <div className="relative h-64 sm:h-80 bg-white rounded-lg overflow-hidden shadow-lg">
               <img 
                 src={product.images[currentImage]} 
                 alt={product.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
               
               {product.images.length > 1 && (
                 <>
                   <button 
                     onClick={prevImage}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
                   >
-                    <ChevronLeft size={20} />
+                    <ChevronLeft size={16} />
                   </button>
                   <button 
                     onClick={nextImage}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
                   >
-                    <ChevronRight size={20} />
+                    <ChevronRight size={16} />
                   </button>
                 </>
               )}
 
               {/* Category badge */}
-              <div className="absolute top-4 left-4 bg-[#0038A8] text-white px-3 py-1 rounded text-sm font-montserrat font-bold">
+              <div className="absolute top-2 left-2 bg-[#0038A8] text-white px-2 py-1 rounded text-xs font-montserrat font-bold">
                 {product.category}
               </div>
 
               {/* Highlight badge */}
               {product.isHighlight && (
-                <div className="absolute top-4 right-4 bg-[#D9A642] text-[#012F60] px-3 py-1 rounded text-sm font-montserrat font-bold flex items-center">
-                  <Star size={14} className="mr-1" fill="currentColor" />
+                <div className="absolute top-2 right-2 bg-[#D9A642] text-[#012F60] px-2 py-1 rounded text-xs font-montserrat font-bold flex items-center">
+                  <Star size={12} className="mr-1" fill="currentColor" />
                   Destaque
                 </div>
               )}
@@ -145,7 +146,7 @@ const Product = () => {
                   <button
                     key={index}
                     onClick={() => setCurrentImage(index)}
-                    className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 ${
+                    className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 ${
                       currentImage === index ? 'border-[#D9A642]' : 'border-gray-200'
                     }`}
                   >
@@ -161,36 +162,36 @@ const Product = () => {
           </div>
 
           {/* Product Info */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             <div>
-              <h1 className="font-montserrat font-extrabold text-2xl md:text-3xl text-[#012F60] mb-2">
+              <h1 className="font-montserrat font-extrabold text-lg md:text-2xl text-[#012F60] mb-2">
                 {product.name}
               </h1>
-              <p className="font-poppins text-3xl font-bold text-[#0038A8] mb-4">
+              <p className="font-poppins text-2xl font-bold text-[#0038A8] mb-3">
                 {product.price}
               </p>
             </div>
 
             <div>
-              <h3 className="font-montserrat font-bold text-lg text-[#012F60] mb-3">
+              <h3 className="font-montserrat font-bold text-base text-[#012F60] mb-2">
                 Descrição
               </h3>
-              <p className="font-poppins text-gray-700 leading-relaxed">
+              <p className="font-poppins text-sm text-gray-700 leading-relaxed">
                 {product.description}
               </p>
             </div>
 
             {/* Personalization Info (more discreet) */}
-            <div className="text-sm text-gray-600 border-l-4 border-[#D9A642] pl-3">
+            <div className="text-xs text-gray-600 border-l-4 border-[#D9A642] pl-2">
               <p>Personalização disponível por +R$ 25,00</p>
             </div>
 
             {/* No Exchange Policy */}
-            <div className="bg-red-50 border border-red-200 p-3 rounded-lg">
-              <p className="font-montserrat font-bold text-sm text-red-800 mb-1">
+            <div className="bg-red-50 border border-red-200 p-2 rounded-lg">
+              <p className="font-montserrat font-bold text-xs text-red-800 mb-1">
                 ⚠️ Política de Trocas
               </p>
-              <p className="font-poppins text-sm text-red-700">
+              <p className="font-poppins text-xs text-red-700">
                 Não fazemos trocas. Consulte a tabela de tamanhos antes da compra.
               </p>
             </div>
@@ -198,19 +199,19 @@ const Product = () => {
             {/* Size Chart Button */}
             <button
               onClick={() => setShowSizeChart(!showSizeChart)}
-              className="w-full bg-gray-100 text-[#012F60] py-3 rounded-lg font-montserrat font-bold hover:bg-gray-200 transition-colors"
+              className="w-full bg-gray-100 text-[#012F60] py-2 rounded-lg font-montserrat font-bold text-sm hover:bg-gray-200 transition-colors"
             >
               {showSizeChart ? 'Ocultar' : 'Ver'} Tabela de Tamanhos
             </button>
 
             {/* Size Chart */}
             {showSizeChart && (
-              <div className="bg-white p-4 rounded-lg shadow-lg">
-                <h4 className="font-montserrat font-bold text-lg text-[#012F60] mb-4">
+              <div className="bg-white p-3 rounded-lg shadow-lg">
+                <h4 className="font-montserrat font-bold text-base text-[#012F60] mb-3">
                   Tabela de Tamanhos
                 </h4>
                 <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
+                  <table className="w-full text-xs">
                     <thead>
                       <tr className="bg-[#0038A8] text-white">
                         <th className="p-2 text-left">Tamanho</th>
@@ -239,7 +240,7 @@ const Product = () => {
             {/* WhatsApp CTA */}
             <a 
               href={`https://wa.me/5531999999999?text=Olá! Tenho interesse na ${product.name}`}
-              className="w-full bg-[#0038A8] text-white py-4 rounded-lg font-montserrat font-bold text-lg hover:bg-[#012F60] transition-colors duration-300 block text-center"
+              className="w-full bg-[#0038A8] text-white py-3 rounded-lg font-montserrat font-bold text-base hover:bg-[#012F60] transition-colors duration-300 block text-center"
             >
               💬 Comprar no WhatsApp
             </a>
