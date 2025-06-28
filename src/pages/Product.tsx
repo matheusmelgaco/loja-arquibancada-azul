@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, ArrowLeft, Star } from 'lucide-react';
@@ -206,29 +205,29 @@ const Product = () => {
 
             {/* Size Chart */}
             {showSizeChart && (
-              <div className="bg-white p-3 rounded-lg shadow-lg">
-                <h4 className="font-montserrat font-bold text-base text-[#012F60] mb-3">
+              <div className="bg-white p-2 rounded-lg shadow-lg">
+                <h4 className="font-montserrat font-bold text-sm text-[#012F60] mb-2">
                   Tabela de Tamanhos
                 </h4>
                 <div className="overflow-x-auto">
                   <table className="w-full text-xs">
                     <thead>
                       <tr className="bg-[#0038A8] text-white">
-                        <th className="p-2 text-left">Tamanho</th>
-                        <th className="p-2 text-left">Comprimento (cm)</th>
-                        <th className="p-2 text-left">Largura (cm)</th>
-                        <th className="p-2 text-left">Altura (cm)</th>
-                        <th className="p-2 text-left">Peso (kg)</th>
+                        <th className="p-1 text-left">Tamanho</th>
+                        <th className="p-1 text-left">Comp. (cm)</th>
+                        <th className="p-1 text-left">Larg. (cm)</th>
+                        <th className="p-1 text-left">Altura (cm)</th>
+                        <th className="p-1 text-left">Peso (kg)</th>
                       </tr>
                     </thead>
                     <tbody>
                       {sizeChart.map((row, index) => (
                         <tr key={index} className="border-b">
-                          <td className="p-2 font-bold">{row.size}</td>
-                          <td className="p-2">{row.chest}</td>
-                          <td className="p-2">{row.width}</td>
-                          <td className="p-2">{row.height}</td>
-                          <td className="p-2">{row.weight}</td>
+                          <td className="p-1 font-bold">{row.size}</td>
+                          <td className="p-1">{row.chest}</td>
+                          <td className="p-1">{row.width}</td>
+                          <td className="p-1">{row.height}</td>
+                          <td className="p-1">{row.weight}</td>
                         </tr>
                       ))}
                     </tbody>

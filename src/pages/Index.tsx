@@ -4,7 +4,6 @@ import PromoBannerInauguration from '../components/PromoBannerInauguration';
 import Hero from '../components/Hero';
 import Catalog from '../components/Catalog';
 import Benefits from '../components/Benefits';
-import InstagramFeed from '../components/InstagramFeed';
 import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
 import FinalCTA from '../components/FinalCTA';
@@ -18,7 +17,6 @@ const Index = () => {
       <Hero />
       <Catalog />
       <Benefits />
-      <InstagramFeed />
       <Testimonials />
       <FAQ />
       <FinalCTA />
