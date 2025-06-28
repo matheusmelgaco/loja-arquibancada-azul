@@ -6,12 +6,13 @@ interface ProductCardProps {
   id: string;
   name: string;
   price: string;
+  originalPrice?: string;
   images: string[];
   category: string;
   isHighlight?: boolean;
 }
 
-const ProductCard = ({ id, name, price, images, category, isHighlight }: ProductCardProps) => {
+const ProductCard = ({ id, name, price, originalPrice, images, category, isHighlight }: ProductCardProps) => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const nextImage = () => {
@@ -87,9 +88,16 @@ const ProductCard = ({ id, name, price, images, category, isHighlight }: Product
         <h3 className="font-montserrat font-bold text-xs text-[#012F60] mb-1 line-clamp-2">
           {name}
         </h3>
-        <p className="font-poppins text-sm font-bold text-[#0038A8] mb-2">
-          a partir de {price}
-        </p>
+        <div className="flex items-center space-x-2 mb-2">
+          {originalPrice && (
+            <span className="font-poppins text-xs text-gray-500 line-through">
+              {originalPrice}
+            </span>
+          )}
+          <p className="font-poppins text-sm font-bold text-[#0038A8]">
+            {price}
+          </p>
+        </div>
       </div>
     </div>
   );

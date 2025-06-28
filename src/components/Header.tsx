@@ -1,16 +1,24 @@
 
 import { ShoppingCart, Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const handleNavClick = (sectionId: string) => {
     if (location.pathname !== '/') {
-      // If not on home page, navigate to home first then scroll
-      window.location.href = `/#${sectionId}`;
+      // Navigate to home page with section hash
+      navigate(`/#${sectionId}`);
+      // Small delay to ensure page loads before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     } else {
       // If on home page, scroll to section
       const element = document.getElementById(sectionId);

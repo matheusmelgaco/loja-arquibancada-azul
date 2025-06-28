@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ProductCard from './ProductCard';
@@ -18,14 +19,15 @@ const Catalog = () => {
 
   const filters = ['Todos', '2025/26', '2024/25', '2023/24', '2022/23', '2021/22 Centenário', 'Retrô', 'Infantil', 'Treino'];
 
-  // Criando produtos com as quantidades solicitadas
-  const createProducts = (category: string, count: number, basePrice: string) => {
+  // Criando produtos com os preços cortados
+  const createProducts = (category: string, count: number, price: string, originalPrice: string) => {
     const products = [];
     for (let i = 1; i <= count; i++) {
       products.push({
         id: `${category.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${i}`,
         name: `Camisa Cruzeiro ${category} - Modelo ${i}`,
-        price: basePrice,
+        price: price,
+        originalPrice: originalPrice,
         category: category,
         images: [
           '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
@@ -41,14 +43,14 @@ const Catalog = () => {
   };
 
   const products = [
-    ...createProducts('2025/26', 4, 'R$ 189,90'),
-    ...createProducts('2024/25', 7, 'R$ 169,90'),
-    ...createProducts('2023/24', 8, 'R$ 159,90'),
-    ...createProducts('2022/23', 6, 'R$ 149,90'),
-    ...createProducts('2021/22 Centenário', 6, 'R$ 179,90'),
-    ...createProducts('Retrô', 6, 'R$ 139,90'),
-    ...createProducts('Infantil', 3, 'R$ 89,90'),
-    ...createProducts('Treino', 12, 'R$ 119,90')
+    ...createProducts('2025/26', 4, 'R$ 159,90', 'R$ 189,90'),
+    ...createProducts('2024/25', 7, 'R$ 149,90', 'R$ 169,90'),
+    ...createProducts('2023/24', 8, 'R$ 139,90', 'R$ 159,90'),
+    ...createProducts('2022/23', 6, 'R$ 129,90', 'R$ 149,90'),
+    ...createProducts('2021/22 Centenário', 6, 'R$ 149,90', 'R$ 179,90'),
+    ...createProducts('Retrô', 6, 'R$ 119,90', 'R$ 139,90'),
+    ...createProducts('Infantil', 3, 'R$ 69,90', 'R$ 89,90'),
+    ...createProducts('Treino', 12, 'R$ 99,90', 'R$ 119,90')
   ];
 
   const filteredProducts = activeFilter === 'Todos' 
@@ -111,6 +113,7 @@ const Catalog = () => {
                 id={product.id}
                 name={product.name}
                 price={product.price}
+                originalPrice={product.originalPrice}
                 images={product.images}
                 category={product.category}
                 isHighlight={product.isHighlight}

@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, ArrowLeft, Star } from 'lucide-react';
@@ -9,14 +10,15 @@ const Product = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [showSizeChart, setShowSizeChart] = useState(false);
 
-  // Same product generation logic as Catalog component
-  const createProducts = (category: string, count: number, basePrice: string) => {
+  // Same product generation logic as Catalog component with price updates
+  const createProducts = (category: string, count: number, price: string, originalPrice: string) => {
     const products = [];
     for (let i = 1; i <= count; i++) {
       products.push({
         id: `${category.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${i}`,
         name: `Camisa Cruzeiro ${category} - Modelo ${i}`,
-        price: basePrice,
+        price: price,
+        originalPrice: originalPrice,
         category: category,
         images: [
           '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
@@ -39,14 +41,14 @@ const Product = () => {
   };
 
   const products = [
-    ...createProducts('2025/26', 4, 'R$ 189,90'),
-    ...createProducts('2024/25', 7, 'R$ 169,90'),
-    ...createProducts('2023/24', 8, 'R$ 159,90'),
-    ...createProducts('2022/23', 6, 'R$ 149,90'),
-    ...createProducts('2021/22 Centenário', 6, 'R$ 179,90'),
-    ...createProducts('Retrô', 6, 'R$ 139,90'),
-    ...createProducts('Infantil', 3, 'R$ 89,90'),
-    ...createProducts('Treino', 12, 'R$ 119,90')
+    ...createProducts('2025/26', 4, 'R$ 159,90', 'R$ 189,90'),
+    ...createProducts('2024/25', 7, 'R$ 149,90', 'R$ 169,90'),
+    ...createProducts('2023/24', 8, 'R$ 139,90', 'R$ 159,90'),
+    ...createProducts('2022/23', 6, 'R$ 129,90', 'R$ 149,90'),
+    ...createProducts('2021/22 Centenário', 6, 'R$ 149,90', 'R$ 179,90'),
+    ...createProducts('Retrô', 6, 'R$ 119,90', 'R$ 139,90'),
+    ...createProducts('Infantil', 3, 'R$ 69,90', 'R$ 89,90'),
+    ...createProducts('Treino', 12, 'R$ 99,90', 'R$ 119,90')
   ];
 
   const product = products.find(p => p.id === id);
@@ -166,9 +168,16 @@ const Product = () => {
               <h1 className="font-montserrat font-extrabold text-lg md:text-2xl text-[#012F60] mb-2">
                 {product.name}
               </h1>
-              <p className="font-poppins text-2xl font-bold text-[#0038A8] mb-3">
-                {product.price}
-              </p>
+              <div className="flex items-center space-x-3 mb-3">
+                {product.originalPrice && (
+                  <span className="font-poppins text-lg text-gray-500 line-through">
+                    {product.originalPrice}
+                  </span>
+                )}
+                <p className="font-poppins text-2xl font-bold text-[#0038A8]">
+                  {product.price}
+                </p>
+              </div>
             </div>
 
             <div>
@@ -205,7 +214,7 @@ const Product = () => {
 
             {/* Size Chart */}
             {showSizeChart && (
-              <div className="bg-white p-2 rounded-lg shadow-lg">
+              <div className="bg-white p-3 rounded-lg shadow-lg">
                 <h4 className="font-montserrat font-bold text-sm text-[#012F60] mb-2">
                   Tabela de Tamanhos
                 </h4>
@@ -213,21 +222,21 @@ const Product = () => {
                   <table className="w-full text-xs">
                     <thead>
                       <tr className="bg-[#0038A8] text-white">
-                        <th className="p-1 text-left">Tamanho</th>
-                        <th className="p-1 text-left">Comp. (cm)</th>
-                        <th className="p-1 text-left">Larg. (cm)</th>
-                        <th className="p-1 text-left">Altura (cm)</th>
-                        <th className="p-1 text-left">Peso (kg)</th>
+                        <th className="p-2 text-left">Tamanho</th>
+                        <th className="p-2 text-left">Comp. (cm)</th>
+                        <th className="p-2 text-left">Larg. (cm)</th>
+                        <th className="p-2 text-left">Altura (cm)</th>
+                        <th className="p-2 text-left">Peso (kg)</th>
                       </tr>
                     </thead>
                     <tbody>
                       {sizeChart.map((row, index) => (
                         <tr key={index} className="border-b">
-                          <td className="p-1 font-bold">{row.size}</td>
-                          <td className="p-1">{row.chest}</td>
-                          <td className="p-1">{row.width}</td>
-                          <td className="p-1">{row.height}</td>
-                          <td className="p-1">{row.weight}</td>
+                          <td className="p-2 font-bold">{row.size}</td>
+                          <td className="p-2">{row.chest}</td>
+                          <td className="p-2">{row.width}</td>
+                          <td className="p-2">{row.height}</td>
+                          <td className="p-2">{row.weight}</td>
                         </tr>
                       ))}
                     </tbody>
