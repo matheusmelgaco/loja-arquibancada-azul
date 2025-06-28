@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface ProductCardProps {
   id: string;
@@ -74,11 +74,11 @@ const ProductCard = ({ id, name, price, originalPrice, images, category, isHighl
           {category}
         </div>
 
-        {/* Highlight badge */}
+        {/* Pronta Entrega badge */}
         {isHighlight && (
           <div className="absolute top-1 right-1 bg-[#D9A642] text-[#012F60] px-1.5 py-0.5 rounded text-xs font-montserrat font-bold flex items-center">
-            <Star size={10} className="mr-0.5" fill="currentColor" />
-            Destaque
+            <span className="mr-0.5">⚡</span>
+            Pronta Entrega
           </div>
         )}
       </div>

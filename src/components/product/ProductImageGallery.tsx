@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface ProductImageGalleryProps {
   images: string[];
@@ -51,11 +51,11 @@ const ProductImageGallery = ({ images, name, category, isHighlight }: ProductIma
           {category}
         </div>
 
-        {/* Highlight badge */}
+        {/* Pronta Entrega badge */}
         {isHighlight && (
           <div className="absolute top-2 right-2 bg-[#D9A642] text-[#012F60] px-2 py-1 rounded text-xs font-montserrat font-bold flex items-center">
-            <Star size={12} className="mr-1" fill="currentColor" />
-            Destaque
+            <span className="mr-1">⚡</span>
+            Pronta Entrega
           </div>
         )}
       </div>
