@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Star } from 'lucide-react';
 import { Product } from '../../data/products';
@@ -29,7 +28,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
     { size: 'EGG', chest: '71-73', width: '49-51', height: '180-185' }
   ];
 
-  // Tabela kit moletom - atualizada
+  // Tabela kit moletom
   const sizeChartKitMoletom = [
     { size: 'P', comp: '67', alt: '167-170', peso: '50-67', peito: '96', ombro: '74,5', calca: '98' },
     { size: 'M', comp: '70', alt: '171-176', peso: '62-75', peito: '100', ombro: '76', calca: '101' },
@@ -72,22 +71,22 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
       case 'feminine':
         return (
           <div className="overflow-x-auto">
-            <table className="w-full text-xs border-collapse">
+            <table className="w-full text-[10px] sm:text-xs border-collapse">
               <thead>
                 <tr className="bg-[#0038A8] text-white">
-                  <th className="p-2 text-left border border-gray-300">Tamanho</th>
-                  <th className="p-2 text-left border border-gray-300">Comp. (cm)</th>
-                  <th className="p-2 text-left border border-gray-300">Larg. (cm)</th>
-                  <th className="p-2 text-left border border-gray-300">Altura (cm)</th>
+                  <th className="p-1 sm:p-2 text-left border border-gray-300 whitespace-nowrap">Tam.</th>
+                  <th className="p-1 sm:p-2 text-left border border-gray-300 whitespace-nowrap">Comp.</th>
+                  <th className="p-1 sm:p-2 text-left border border-gray-300 whitespace-nowrap">Larg.</th>
+                  <th className="p-1 sm:p-2 text-left border border-gray-300 whitespace-nowrap">Alt.</th>
                 </tr>
               </thead>
               <tbody>
                 {sizeChart.map((row: any, index) => (
                   <tr key={index} className="border-b">
-                    <td className="p-2 font-bold border border-gray-300">{row.size}</td>
-                    <td className="p-2 border border-gray-300">{row.chest}</td>
-                    <td className="p-2 border border-gray-300">{row.width}</td>
-                    <td className="p-2 border border-gray-300">{row.height}</td>
+                    <td className="p-1 sm:p-2 font-bold border border-gray-300 whitespace-nowrap">{row.size}</td>
+                    <td className="p-1 sm:p-2 border border-gray-300 whitespace-nowrap">{row.chest}</td>
+                    <td className="p-1 sm:p-2 border border-gray-300 whitespace-nowrap">{row.width}</td>
+                    <td className="p-1 sm:p-2 border border-gray-300 whitespace-nowrap">{row.height}</td>
                   </tr>
                 ))}
               </tbody>
@@ -98,28 +97,28 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
       case 'moletom':
         return (
           <div className="overflow-x-auto">
-            <table className="w-full text-xs border-collapse">
+            <table className="w-full text-[9px] sm:text-xs border-collapse">
               <thead>
                 <tr className="bg-[#0038A8] text-white">
-                  <th className="p-2 text-left border border-gray-300">Tam.</th>
-                  <th className="p-2 text-left border border-gray-300">Comp. (cm)</th>
-                  <th className="p-2 text-left border border-gray-300">Alt. (cm)</th>
-                  <th className="p-2 text-left border border-gray-300">Peso (kg)</th>
-                  <th className="p-2 text-left border border-gray-300">Peito (cm)</th>
-                  <th className="p-2 text-left border border-gray-300">Ombro (cm)</th>
-                  <th className="p-2 text-left border border-gray-300">Calça (cm)</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Tam.</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Comp.</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Alt.</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Peso</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Peito</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Ombro</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Calça</th>
                 </tr>
               </thead>
               <tbody>
                 {sizeChart.map((row: any, index) => (
                   <tr key={index} className="border-b">
-                    <td className="p-2 font-bold border border-gray-300">{row.size}</td>
-                    <td className="p-2 border border-gray-300">{row.comp}</td>
-                    <td className="p-2 border border-gray-300">{row.alt}</td>
-                    <td className="p-2 border border-gray-300">{row.peso}</td>
-                    <td className="p-2 border border-gray-300">{row.peito}</td>
-                    <td className="p-2 border border-gray-300">{row.ombro}</td>
-                    <td className="p-2 border border-gray-300">{row.calca}</td>
+                    <td className="p-1 font-bold border border-gray-300 whitespace-nowrap">{row.size}</td>
+                    <td className="p-1 border border-gray-300 whitespace-nowrap">{row.comp}</td>
+                    <td className="p-1 border border-gray-300 whitespace-nowrap">{row.alt}</td>
+                    <td className="p-1 border border-gray-300 whitespace-nowrap">{row.peso}</td>
+                    <td className="p-1 border border-gray-300 whitespace-nowrap">{row.peito}</td>
+                    <td className="p-1 border border-gray-300 whitespace-nowrap">{row.ombro}</td>
+                    <td className="p-1 border border-gray-300 whitespace-nowrap">{row.calca}</td>
                   </tr>
                 ))}
               </tbody>
@@ -130,26 +129,26 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
       case 'kids':
         return (
           <div className="overflow-x-auto">
-            <table className="w-full text-xs border-collapse">
+            <table className="w-full text-[9px] sm:text-xs border-collapse">
               <thead>
                 <tr className="bg-[#0038A8] text-white">
-                  <th className="p-2 text-left border border-gray-300">Tam.</th>
-                  <th className="p-2 text-left border border-gray-300">Idade</th>
-                  <th className="p-2 text-left border border-gray-300">Alt. (cm)</th>
-                  <th className="p-2 text-left border border-gray-300">Comp. (cm)</th>
-                  <th className="p-2 text-left border border-gray-300">Larg. (cm)</th>
-                  <th className="p-2 text-left border border-gray-300">Cintura (cm)</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Tam.</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Idade</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Alt.</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Comp.</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Larg.</th>
+                  <th className="p-1 text-left border border-gray-300 whitespace-nowrap">Cintura</th>
                 </tr>
               </thead>
               <tbody>
                 {sizeChart.map((row: any, index) => (
                   <tr key={index} className="border-b">
-                    <td className="p-2 font-bold border border-gray-300">{row.size}</td>
-                    <td className="p-2 border border-gray-300">{row.idade}</td>
-                    <td className="p-2 border border-gray-300">{row.altura}</td>
-                    <td className="p-2 border border-gray-300">{row.comp}</td>
-                    <td className="p-2 border border-gray-300">{row.larg}</td>
-                    <td className="p-2 border border-gray-300">{row.cintura}</td>
+                    <td className="p-1 font-bold border border-gray-300 whitespace-nowrap">{row.size}</td>
+                    <td className="p-1 border border-gray-300 whitespace-nowrap">{row.idade}</td>
+                    <td className="p-1 border border-gray-300 whitespace-nowrap">{row.altura}</td>
+                    <td className="p-1 border border-gray-300 whitespace-nowrap">{row.comp}</td>
+                    <td className="p-1 border border-gray-300 whitespace-nowrap">{row.larg}</td>
+                    <td className="p-1 border border-gray-300 whitespace-nowrap">{row.cintura}</td>
                   </tr>
                 ))}
               </tbody>
@@ -160,24 +159,24 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
       default:
         return (
           <div className="overflow-x-auto">
-            <table className="w-full text-xs border-collapse">
+            <table className="w-full text-[10px] sm:text-xs border-collapse">
               <thead>
                 <tr className="bg-[#0038A8] text-white">
-                  <th className="p-2 text-left border border-gray-300">Tamanho</th>
-                  <th className="p-2 text-left border border-gray-300">Comp. (cm)</th>
-                  <th className="p-2 text-left border border-gray-300">Larg. (cm)</th>
-                  <th className="p-2 text-left border border-gray-300">Altura (cm)</th>
-                  <th className="p-2 text-left border border-gray-300">Peso (kg)</th>
+                  <th className="p-1 sm:p-2 text-left border border-gray-300 whitespace-nowrap">Tam.</th>
+                  <th className="p-1 sm:p-2 text-left border border-gray-300 whitespace-nowrap">Comp.</th>
+                  <th className="p-1 sm:p-2 text-left border border-gray-300 whitespace-nowrap">Larg.</th>
+                  <th className="p-1 sm:p-2 text-left border border-gray-300 whitespace-nowrap">Alt.</th>
+                  <th className="p-1 sm:p-2 text-left border border-gray-300 whitespace-nowrap">Peso</th>
                 </tr>
               </thead>
               <tbody>
                 {sizeChart.map((row: any, index) => (
                   <tr key={index} className="border-b">
-                    <td className="p-2 font-bold border border-gray-300">{row.size}</td>
-                    <td className="p-2 border border-gray-300">{row.chest}</td>
-                    <td className="p-2 border border-gray-300">{row.width}</td>
-                    <td className="p-2 border border-gray-300">{row.height}</td>
-                    <td className="p-2 border border-gray-300">{row.weight}</td>
+                    <td className="p-1 sm:p-2 font-bold border border-gray-300 whitespace-nowrap">{row.size}</td>
+                    <td className="p-1 sm:p-2 border border-gray-300 whitespace-nowrap">{row.chest}</td>
+                    <td className="p-1 sm:p-2 border border-gray-300 whitespace-nowrap">{row.width}</td>
+                    <td className="p-1 sm:p-2 border border-gray-300 whitespace-nowrap">{row.height}</td>
+                    <td className="p-1 sm:p-2 border border-gray-300 whitespace-nowrap">{row.weight}</td>
                   </tr>
                 ))}
               </tbody>
@@ -247,12 +246,12 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
 
       {/* Size Chart */}
       {showSizeChart && (
-        <div className="bg-white p-3 rounded-lg shadow-lg">
-          <h4 className="font-montserrat font-bold text-sm text-[#012F60] mb-3">
+        <div className="bg-white p-2 sm:p-3 rounded-lg shadow-lg">
+          <h4 className="font-montserrat font-bold text-sm text-[#012F60] mb-2">
             {chartTitle}
           </h4>
           {renderSizeTable()}
-          <p className="font-poppins text-xs text-gray-600 mt-3 italic">
+          <p className="font-poppins text-xs text-gray-600 mt-2 italic">
             Considerar a margem de erro de 1 a 3 cm em cada medida
           </p>
         </div>

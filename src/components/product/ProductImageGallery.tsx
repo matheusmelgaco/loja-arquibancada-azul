@@ -46,17 +46,16 @@ const ProductImageGallery = ({ images, name, category, isHighlight }: ProductIma
           </>
         )}
 
-        {/* Category badge - smaller for mobile */}
-        <div className="absolute top-2 left-2 bg-[#0038A8] text-white px-1.5 py-0.5 rounded text-xs sm:text-sm font-montserrat font-bold">
+        {/* Category badge */}
+        <div className="absolute top-2 left-2 bg-[#0038A8] text-white px-2 py-1 rounded text-sm font-montserrat font-bold">
           {category}
         </div>
 
-        {/* Pronta Entrega badge - smaller for mobile */}
+        {/* Destaque badge */}
         {isHighlight && (
-          <div className="absolute top-2 right-2 bg-[#D9A642] text-[#012F60] px-1.5 py-0.5 rounded text-xs sm:text-sm font-montserrat font-bold flex items-center">
-            <span className="mr-0.5 text-[10px] sm:text-xs">⚡</span>
-            <span className="hidden sm:inline">Pronta Entrega</span>
-            <span className="sm:hidden">Pronta</span>
+          <div className="absolute top-2 right-2 bg-[#D9A642] text-[#012F60] px-2 py-1 rounded text-sm font-montserrat font-bold flex items-center">
+            <span className="mr-1 text-sm">⚡</span>
+            <span>Destaque</span>
           </div>
         )}
       </div>
