@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -46,16 +45,15 @@ const ProductImageGallery = ({ images, name, category, isHighlight }: ProductIma
           </>
         )}
 
-        {/* Category badge */}
-        <div className="absolute top-2 left-2 bg-[#0038A8] text-white px-2 py-1 rounded text-sm font-montserrat font-bold">
+        {/* Category badge - smaller */}
+        <div className="absolute top-2 left-2 bg-[#0038A8] text-white px-2 py-1 rounded text-xs font-montserrat font-bold">
           {category}
         </div>
 
-        {/* Destaque badge */}
+        {/* Imediato badge - smaller */}
         {isHighlight && (
-          <div className="absolute top-2 right-2 bg-[#D9A642] text-[#012F60] px-2 py-1 rounded text-sm font-montserrat font-bold flex items-center">
-            <span className="mr-1 text-sm">⚡</span>
-            <span>Destaque</span>
+          <div className="absolute top-2 right-2 bg-[#D9A642] text-[#012F60] px-2 py-1 rounded text-xs font-montserrat font-bold">
+            Imediato
           </div>
         )}
       </div>

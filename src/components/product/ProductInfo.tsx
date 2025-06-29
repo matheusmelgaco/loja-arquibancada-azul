@@ -202,12 +202,20 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         </div>
       </div>
 
+      {/* WhatsApp CTA - Moved up */}
+      <a 
+        href={`https://wa.me/5531999999999?text=Olá! Tenho interesse na ${product.name}`}
+        className="w-full bg-[#0038A8] text-white py-3 rounded-lg font-montserrat font-bold text-base hover:bg-[#012F60] transition-colors duration-300 block text-center"
+      >
+        💬 Comprar no WhatsApp
+      </a>
+
       <div>
         <h3 className="font-montserrat font-bold text-base text-[#012F60] mb-2">
           Descrição
         </h3>
         <p className="font-poppins text-sm text-gray-700 leading-relaxed">
-          {product.description}
+          Qualidade premium 1:1
         </p>
       </div>
 
@@ -256,14 +264,6 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
           </p>
         </div>
       )}
-
-      {/* WhatsApp CTA */}
-      <a 
-        href={`https://wa.me/5531999999999?text=Olá! Tenho interesse na ${product.name}`}
-        className="w-full bg-[#0038A8] text-white py-3 rounded-lg font-montserrat font-bold text-base hover:bg-[#012F60] transition-colors duration-300 block text-center"
-      >
-        💬 Comprar no WhatsApp
-      </a>
     </div>
   );
 };
