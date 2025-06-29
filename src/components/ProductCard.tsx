@@ -76,7 +76,7 @@ const ProductCard = ({ id, name, price, originalPrice, images, category, isHighl
         {/* Imediato badge - smaller */}
         {isHighlight && (
           <div className="absolute top-1 right-1 bg-[#D9A642] text-[#012F60] px-1 py-0.5 rounded text-[9px] font-montserrat font-bold">
-            Imediato
+            📦 Imediato
           </div>
         )}
       </div>

@@ -215,7 +215,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
           Descrição
         </h3>
         <p className="font-poppins text-sm text-gray-700 leading-relaxed">
-          Qualidade premium 1:1
+          {product.description}
         </p>
       </div>
 

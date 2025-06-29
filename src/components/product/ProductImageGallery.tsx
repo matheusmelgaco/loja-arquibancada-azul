@@ -53,7 +53,7 @@ const ProductImageGallery = ({ images, name, category, isHighlight }: ProductIma
         {/* Imediato badge - smaller */}
         {isHighlight && (
           <div className="absolute top-2 right-2 bg-[#D9A642] text-[#012F60] px-2 py-1 rounded text-xs font-montserrat font-bold">
-            Imediato
+            📦 Imediato
           </div>
         )}
       </div>
