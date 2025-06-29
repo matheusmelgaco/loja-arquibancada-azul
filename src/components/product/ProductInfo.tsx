@@ -29,13 +29,13 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
     { size: 'EGG', chest: '71-73', width: '49-51', height: '180-185' }
   ];
 
-  // Tabela kit moletom
+  // Tabela kit moletom - atualizada
   const sizeChartKitMoletom = [
-    { size: 'P', comp: '67', alt: '1,67-1,70', peso: '50-67', peito: '96', ombro: '74,5', calca: '98' },
-    { size: 'M', comp: '70', alt: '1,71-1,76', peso: '62-75', peito: '100', ombro: '76', calca: '101' },
-    { size: 'G', comp: '72', alt: '1,77-1,82', peso: '70-80', peito: '104', ombro: '77,5', calca: '104' },
-    { size: 'GG', comp: '74', alt: '1,83-1,90', peso: '81-90', peito: '106', ombro: '79', calca: '107' },
-    { size: 'EGG', comp: '76', alt: '1,88-1,95', peso: '91-100', peito: '110', ombro: '80,5', calca: '110' }
+    { size: 'P', comp: '67', alt: '167-170', peso: '50-67', peito: '96', ombro: '74,5', calca: '98' },
+    { size: 'M', comp: '70', alt: '171-176', peso: '62-75', peito: '100', ombro: '76', calca: '101' },
+    { size: 'G', comp: '72', alt: '177-182', peso: '70-80', peito: '104', ombro: '77,5', calca: '104' },
+    { size: 'GG', comp: '74', alt: '183-190', peso: '81-90', peito: '106', ombro: '79', calca: '107' },
+    { size: 'EGG', comp: '76', alt: '188-195', peso: '91-100', peito: '110', ombro: '80,5', calca: '110' }
   ];
 
   // Tabela infantil
@@ -71,110 +71,118 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
     switch (chartType) {
       case 'feminine':
         return (
-          <table className="w-full text-xs">
-            <thead>
-              <tr className="bg-[#0038A8] text-white">
-                <th className="p-1 text-left">Tamanho</th>
-                <th className="p-1 text-left">Comprimento (cm)</th>
-                <th className="p-1 text-left">Largura (cm)</th>
-                <th className="p-1 text-left">Sua Altura (cm)</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sizeChart.map((row: any, index) => (
-                <tr key={index} className="border-b">
-                  <td className="p-1 font-bold">{row.size}</td>
-                  <td className="p-1">{row.chest}</td>
-                  <td className="p-1">{row.width}</td>
-                  <td className="p-1">{row.height}</td>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs border-collapse">
+              <thead>
+                <tr className="bg-[#0038A8] text-white">
+                  <th className="p-2 text-left border border-gray-300">Tamanho</th>
+                  <th className="p-2 text-left border border-gray-300">Comp. (cm)</th>
+                  <th className="p-2 text-left border border-gray-300">Larg. (cm)</th>
+                  <th className="p-2 text-left border border-gray-300">Altura (cm)</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {sizeChart.map((row: any, index) => (
+                  <tr key={index} className="border-b">
+                    <td className="p-2 font-bold border border-gray-300">{row.size}</td>
+                    <td className="p-2 border border-gray-300">{row.chest}</td>
+                    <td className="p-2 border border-gray-300">{row.width}</td>
+                    <td className="p-2 border border-gray-300">{row.height}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         );
 
       case 'moletom':
         return (
-          <table className="w-full text-xs">
-            <thead>
-              <tr className="bg-[#0038A8] text-white">
-                <th className="p-1 text-left">Tam.</th>
-                <th className="p-1 text-left">Comp.(cm)</th>
-                <th className="p-1 text-left">Alt.(m)</th>
-                <th className="p-1 text-left">Peso(Kg)</th>
-                <th className="p-1 text-left">Peito(cm)</th>
-                <th className="p-1 text-left">Ombro(cm)</th>
-                <th className="p-1 text-left">Calça(cm)</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sizeChart.map((row: any, index) => (
-                <tr key={index} className="border-b">
-                  <td className="p-1 font-bold">{row.size}</td>
-                  <td className="p-1">{row.comp}</td>
-                  <td className="p-1">{row.alt}</td>
-                  <td className="p-1">{row.peso}</td>
-                  <td className="p-1">{row.peito}</td>
-                  <td className="p-1">{row.ombro}</td>
-                  <td className="p-1">{row.calca}</td>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs border-collapse">
+              <thead>
+                <tr className="bg-[#0038A8] text-white">
+                  <th className="p-2 text-left border border-gray-300">Tam.</th>
+                  <th className="p-2 text-left border border-gray-300">Comp. (cm)</th>
+                  <th className="p-2 text-left border border-gray-300">Alt. (cm)</th>
+                  <th className="p-2 text-left border border-gray-300">Peso (kg)</th>
+                  <th className="p-2 text-left border border-gray-300">Peito (cm)</th>
+                  <th className="p-2 text-left border border-gray-300">Ombro (cm)</th>
+                  <th className="p-2 text-left border border-gray-300">Calça (cm)</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {sizeChart.map((row: any, index) => (
+                  <tr key={index} className="border-b">
+                    <td className="p-2 font-bold border border-gray-300">{row.size}</td>
+                    <td className="p-2 border border-gray-300">{row.comp}</td>
+                    <td className="p-2 border border-gray-300">{row.alt}</td>
+                    <td className="p-2 border border-gray-300">{row.peso}</td>
+                    <td className="p-2 border border-gray-300">{row.peito}</td>
+                    <td className="p-2 border border-gray-300">{row.ombro}</td>
+                    <td className="p-2 border border-gray-300">{row.calca}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         );
 
       case 'kids':
         return (
-          <table className="w-full text-xs">
-            <thead>
-              <tr className="bg-[#0038A8] text-white">
-                <th className="p-1 text-left">Tam.</th>
-                <th className="p-1 text-left">Idade</th>
-                <th className="p-1 text-left">Altura</th>
-                <th className="p-1 text-left">Comprimento</th>
-                <th className="p-1 text-left">Largura</th>
-                <th className="p-1 text-left">Cintura</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sizeChart.map((row: any, index) => (
-                <tr key={index} className="border-b">
-                  <td className="p-1 font-bold">{row.size}</td>
-                  <td className="p-1">{row.idade}</td>
-                  <td className="p-1">{row.altura}</td>
-                  <td className="p-1">{row.comp}</td>
-                  <td className="p-1">{row.larg}</td>
-                  <td className="p-1">{row.cintura}</td>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs border-collapse">
+              <thead>
+                <tr className="bg-[#0038A8] text-white">
+                  <th className="p-2 text-left border border-gray-300">Tam.</th>
+                  <th className="p-2 text-left border border-gray-300">Idade</th>
+                  <th className="p-2 text-left border border-gray-300">Alt. (cm)</th>
+                  <th className="p-2 text-left border border-gray-300">Comp. (cm)</th>
+                  <th className="p-2 text-left border border-gray-300">Larg. (cm)</th>
+                  <th className="p-2 text-left border border-gray-300">Cintura (cm)</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {sizeChart.map((row: any, index) => (
+                  <tr key={index} className="border-b">
+                    <td className="p-2 font-bold border border-gray-300">{row.size}</td>
+                    <td className="p-2 border border-gray-300">{row.idade}</td>
+                    <td className="p-2 border border-gray-300">{row.altura}</td>
+                    <td className="p-2 border border-gray-300">{row.comp}</td>
+                    <td className="p-2 border border-gray-300">{row.larg}</td>
+                    <td className="p-2 border border-gray-300">{row.cintura}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         );
 
       default:
         return (
-          <table className="w-full text-xs">
-            <thead>
-              <tr className="bg-[#0038A8] text-white">
-                <th className="p-1 text-left">Tamanho</th>
-                <th className="p-1 text-left">Comp. (cm)</th>
-                <th className="p-1 text-left">Larg. (cm)</th>
-                <th className="p-1 text-left">Altura (cm)</th>
-                <th className="p-1 text-left">Peso (kg)</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sizeChart.map((row: any, index) => (
-                <tr key={index} className="border-b">
-                  <td className="p-1 font-bold">{row.size}</td>
-                  <td className="p-1">{row.chest}</td>
-                  <td className="p-1">{row.width}</td>
-                  <td className="p-1">{row.height}</td>
-                  <td className="p-1">{row.weight}</td>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs border-collapse">
+              <thead>
+                <tr className="bg-[#0038A8] text-white">
+                  <th className="p-2 text-left border border-gray-300">Tamanho</th>
+                  <th className="p-2 text-left border border-gray-300">Comp. (cm)</th>
+                  <th className="p-2 text-left border border-gray-300">Larg. (cm)</th>
+                  <th className="p-2 text-left border border-gray-300">Altura (cm)</th>
+                  <th className="p-2 text-left border border-gray-300">Peso (kg)</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {sizeChart.map((row: any, index) => (
+                  <tr key={index} className="border-b">
+                    <td className="p-2 font-bold border border-gray-300">{row.size}</td>
+                    <td className="p-2 border border-gray-300">{row.chest}</td>
+                    <td className="p-2 border border-gray-300">{row.width}</td>
+                    <td className="p-2 border border-gray-300">{row.height}</td>
+                    <td className="p-2 border border-gray-300">{row.weight}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         );
     }
   };
@@ -239,14 +247,12 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
 
       {/* Size Chart */}
       {showSizeChart && (
-        <div className="bg-white p-2 rounded-lg shadow-lg">
-          <h4 className="font-montserrat font-bold text-xs text-[#012F60] mb-2">
+        <div className="bg-white p-3 rounded-lg shadow-lg">
+          <h4 className="font-montserrat font-bold text-sm text-[#012F60] mb-3">
             {chartTitle}
           </h4>
-          <div className="overflow-x-auto">
-            {renderSizeTable()}
-          </div>
-          <p className="font-poppins text-xs text-gray-600 mt-2 italic">
+          {renderSizeTable()}
+          <p className="font-poppins text-xs text-gray-600 mt-3 italic">
             Considerar a margem de erro de 1 a 3 cm em cada medida
           </p>
         </div>
