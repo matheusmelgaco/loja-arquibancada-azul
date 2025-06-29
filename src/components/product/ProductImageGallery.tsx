@@ -46,15 +46,15 @@ const ProductImageGallery = ({ images, name, category, isHighlight }: ProductIma
           </>
         )}
 
-        {/* Category badge */}
-        <div className="absolute top-2 left-2 bg-[#0038A8] text-white px-2 py-1 rounded text-xs font-montserrat font-bold">
+        {/* Category badge - smaller */}
+        <div className="absolute top-2 left-2 bg-[#0038A8] text-white px-1.5 py-0.5 rounded text-xs font-montserrat font-bold">
           {category}
         </div>
 
-        {/* Pronta Entrega badge */}
+        {/* Pronta Entrega badge - smaller */}
         {isHighlight && (
-          <div className="absolute top-2 right-2 bg-[#D9A642] text-[#012F60] px-2 py-1 rounded text-xs font-montserrat font-bold flex items-center">
-            <span className="mr-1">⚡</span>
+          <div className="absolute top-2 right-2 bg-[#D9A642] text-[#012F60] px-1.5 py-0.5 rounded text-xs font-montserrat font-bold flex items-center">
+            <span className="mr-0.5">⚡</span>
             Pronta Entrega
           </div>
         )}

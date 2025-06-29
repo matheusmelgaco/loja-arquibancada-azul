@@ -29,13 +29,13 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
     { size: 'EGG', chest: '71-73', width: '49-51', height: '180-185' }
   ];
 
-  // Tabela conjunto treino
-  const sizeChartTraining = [
-    { size: 'P', comp: '67', alt: '1.67-1.70', peso: '50-67', peito: '96', ombro: '74.5', calca: '98' },
-    { size: 'M', comp: '70', alt: '1.71-1.76', peso: '62-75', peito: '100', ombro: '76', calca: '101' },
-    { size: 'G', comp: '72', alt: '1.77-1.82', peso: '70-80', peito: '104', ombro: '77.5', calca: '104' },
-    { size: 'GG', comp: '74', alt: '1.83-1.90', peso: '81-90', peito: '106', ombro: '79', calca: '107' },
-    { size: 'EGG', comp: '76', alt: '1.88-1.95', peso: '91-100', peito: '110', ombro: '80.5', calca: '110' }
+  // Tabela kit moletom
+  const sizeChartKitMoletom = [
+    { size: 'P', comp: '67', alt: '1,67-1,70', peso: '50-67', peito: '96', ombro: '74,5', calca: '98' },
+    { size: 'M', comp: '70', alt: '1,71-1,76', peso: '62-75', peito: '100', ombro: '76', calca: '101' },
+    { size: 'G', comp: '72', alt: '1,77-1,82', peso: '70-80', peito: '104', ombro: '77,5', calca: '104' },
+    { size: 'GG', comp: '74', alt: '1,83-1,90', peso: '81-90', peito: '106', ombro: '79', calca: '107' },
+    { size: 'EGG', comp: '76', alt: '1,88-1,95', peso: '91-100', peito: '110', ombro: '80,5', calca: '110' }
   ];
 
   // Tabela infantil
@@ -55,17 +55,17 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
     const productName = product.name.toLowerCase();
     
     if (productName.includes('feminina')) {
-      return { chart: sizeChartFeminine, type: 'feminine' };
-    } else if (productName.includes('conjunto') && productName.includes('treino')) {
-      return { chart: sizeChartTraining, type: 'training' };
+      return { chart: sizeChartFeminine, type: 'feminine', title: 'Tabela de Tamanhos Feminina' };
+    } else if (productName.includes('kit moletom') || productName.includes('conjunto moletom')) {
+      return { chart: sizeChartKitMoletom, type: 'moletom', title: 'Tabela de Tamanhos Kit Moletom' };
     } else if (productName.includes('infantil') || productName.includes('kit')) {
-      return { chart: sizeChartKids, type: 'kids' };
+      return { chart: sizeChartKids, type: 'kids', title: 'Tabela de Tamanhos Infantil' };
     } else {
-      return { chart: sizeChartMasculine, type: 'masculine' };
+      return { chart: sizeChartMasculine, type: 'masculine', title: 'Tabela de Tamanhos' };
     }
   };
 
-  const { chart: sizeChart, type: chartType } = getSizeChart();
+  const { chart: sizeChart, type: chartType, title: chartTitle } = getSizeChart();
 
   const renderSizeTable = () => {
     switch (chartType) {
@@ -93,7 +93,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
           </table>
         );
 
-      case 'training':
+      case 'moletom':
         return (
           <table className="w-full text-xs">
             <thead>
@@ -234,14 +234,14 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         onClick={() => setShowSizeChart(!showSizeChart)}
         className="w-full bg-gray-100 text-[#012F60] py-2 rounded-lg font-montserrat font-bold text-sm hover:bg-gray-200 transition-colors"
       >
-        {showSizeChart ? 'Ocultar' : 'Ver'} Tabela de Tamanhos
+        {showSizeChart ? 'Ocultar' : 'Ver'} {chartTitle}
       </button>
 
       {/* Size Chart */}
       {showSizeChart && (
         <div className="bg-white p-2 rounded-lg shadow-lg">
           <h4 className="font-montserrat font-bold text-xs text-[#012F60] mb-2">
-            Tabela de Tamanhos
+            {chartTitle}
           </h4>
           <div className="overflow-x-auto">
             {renderSizeTable()}
