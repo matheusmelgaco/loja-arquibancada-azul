@@ -103,7 +103,7 @@ const Footer = () => {
                   <div className="bg-white text-blue-600 px-2 py-1 rounded text-xs font-bold">VISA</div>
                   <div className="bg-white text-red-600 px-2 py-1 rounded text-xs font-bold">MASTER</div>
                 </div>
-                <p className="font-poppins text-xs text-blue-200 mt-1">PIX: 5% de desconto</p>
+                <p className="font-poppins text-xs text-blue-200 mt-1"></p>
               </div>
             </div>
           </div>
@@ -114,19 +114,6 @@ const Footer = () => {
           <p className="font-poppins text-xs text-blue-200">
             © {currentYear} Arquibancada Azul. Todos os direitos reservados.
           </p>
-          <div className="flex items-center space-x-4 mt-3 md:mt-0">
-            <p className="font-poppins text-xs text-blue-300">
-              Site criado com 
-              <a 
-                href="https://lovable.dev" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:text-[#D9A642] transition-colors ml-1"
-              >
-                Lovable
-              </a>
-            </p>
-          </div>
         </div>
       </div>
     </footer>
