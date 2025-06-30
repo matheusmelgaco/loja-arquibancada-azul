@@ -64,7 +64,7 @@ const Contact = () => {
                   </h3>
                 </div>
                 <p className="font-poppins text-sm text-gray-700 mb-2">
-                  <strong>contato@arquibancadaazul.com.br</strong>
+                  <strong>lojaarquibancadaazul@gmail.com</strong>
                 </p>
                 <p className="font-poppins text-xs text-gray-600">
                   Para dúvidas e suporte geral
