@@ -221,7 +221,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
 
       {/* Personalization Info */}
       <div className="text-xs text-gray-600 border-l-4 border-[#D9A642] pl-2">
-        <p>Personalização disponível por +R$ 20,00</p>
+        <p>Personalização disponível por + R$ 20,00</p>
       </div>
 
       {/* Promo Banner */}

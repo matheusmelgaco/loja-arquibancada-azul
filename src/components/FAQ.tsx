@@ -16,11 +16,11 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'Como funcionam os prazos de entrega?',
-      answer: 'Para produtos em pronta-entrega, enviamos em até 24h úteis. Para encomendas personalizadas, o prazo é de até 25 dias úteis para produção + tempo de envio (3-7 dias úteis).'
+      answer: 'Para produtos em pronta-entrega, enviamos em até 24h úteis. Para encomendas personalizadas, o prazo é de até 25 dias úteis.'
     },
     {
       question: 'Quais são as formas de pagamento aceitas?',
-      answer: 'Aceitamos PIX (5% desconto), cartões de crédito (até 12x), cartões de débito e transferência bancária. O pagamento é feito diretamente pelo WhatsApp com total segurança.'
+      answer: 'Aceitamos PIX, cartões de crédito (até 12x), cartões de débito e transferência bancária. O pagamento é feito diretamente pelo WhatsApp com total segurança.'
     },
     {
       question: 'Como funciona a tabela de tamanhos?',
@@ -28,11 +28,11 @@ const FAQ = () => {
     },
     {
       question: 'É possível trocar ou devolver produtos?',
-      answer: 'Sim! Você tem até 7 dias corridos para trocar produtos com defeito ou numeração errada. Produtos personalizados só são trocados em caso de defeito de fabricação.'
+      answer: 'Não! Fique atento a tabela de tamanhos antes de realizar a compra.'
     },
     {
-      question: 'As camisas são originais?',
-      answer: 'Todas as nossas camisas oficiais são 100% originais e licenciadas. Para camisas retrô e personalizadas, utilizamos materiais premium com qualidade superior.'
+      question: 'Qual a qualidade das camisas?',
+      answer: 'Todas as nossas camisas são tailandesas com qualidade premium 1:1.'
     },
     {
       question: 'Vocês entregam em todo o Brasil?',
@@ -40,7 +40,7 @@ const FAQ = () => {
     },
     {
       question: 'Como funciona a personalização?',
-      answer: 'Personalizamos com nome e número por +R$ 25,00. Utilizamos impressão termocolante premium que não desbota nem racha. Prazo adicional de 3-5 dias úteis.'
+      answer: 'Personalizamos com nome e número por + R$ 20,00. Prazo adicional de 3-5 dias úteis.'
     },
     {
       question: 'Posso acompanhar meu pedido?',

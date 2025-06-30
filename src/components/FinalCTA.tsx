@@ -23,7 +23,7 @@ const FinalCTA = () => {
 
           <div className="space-y-1 mb-4">
             <p className="font-poppins text-xs">
-              ✅ <strong>Produtos originais</strong> e de qualidade premium
+              ✅ <strong>Produtos 1:1</strong>de qualidade premium
             </p>
             <p className="font-poppins text-xs">
               ✅ <strong>Pronta entrega</strong> ou encomenda personalizada

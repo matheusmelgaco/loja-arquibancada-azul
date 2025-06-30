@@ -23,8 +23,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="font-poppins text-xs text-blue-200 leading-relaxed">
-              Sua loja oficial de camisas e produtos do Cruzeiro. 
-              Qualidade premium, atendimento personalizado e paixão pelo Cabuloso.
+              A loja pra quem vive o Cruzeiro. 
+              Qualidade premium 1:1, atendimento personalizado e paixão pelo Cabuloso.
             </p>
           </div>
 
@@ -37,8 +37,8 @@ const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Clock size={14} className="text-[#D9A642]" />
                 <div>
-                  <p className="font-poppins text-xs">Segunda a Sexta</p>
-                  <p className="font-poppins text-xs text-blue-200">10:00 às 18:00</p>
+                  <p className="font-poppins text-xs">Segunda a Sábado</p>
+                  <p className="font-poppins text-xs text-blue-200">08:00 às 18:00</p>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
@@ -63,9 +63,6 @@ const Footer = () => {
               <a href="#faq" className="block font-poppins text-xs hover:text-[#D9A642] transition-colors">
                 FAQ
               </a>
-              <p className="font-poppins text-xs text-blue-200">
-                Não fazemos trocas
-              </p>
             </div>
           </div>
 

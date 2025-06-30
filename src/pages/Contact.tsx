@@ -82,9 +82,7 @@ const Contact = () => {
                   </h3>
                 </div>
                 <div className="space-y-1 font-poppins text-sm text-gray-700">
-                  <p><strong>Segunda a Sexta:</strong> 8h às 18h</p>
-                  <p><strong>Sábado:</strong> 8h às 14h</p>
-                  <p><strong>Domingo:</strong> 9h às 12h</p>
+                  <p><strong>Segunda a Sábado:</strong> 8h às 18h</p>
                   <p className="text-xs text-gray-600 mt-2">
                     * Atendimento via WhatsApp
                   </p>

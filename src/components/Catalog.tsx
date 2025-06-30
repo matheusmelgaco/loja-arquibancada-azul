@@ -40,7 +40,7 @@ const Catalog = () => {
             🦊 NOSSO CATÁLOGO
           </h2>
           <p className="font-poppins text-sm text-gray-600 max-w-2xl mx-auto">
-            Encontre a camisa perfeita do seu Cruzeiro. Modelos oficiais, retrô e edições especiais.
+            Encontre a camisa perfeita do seu Cruzeiro. Modelos novos, retrô e edições especiais.
           </p>
         </div>
 

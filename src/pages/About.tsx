@@ -37,7 +37,7 @@ const About = () => {
                 <ul className="space-y-2">
                   <li className="font-poppins text-sm text-gray-700 flex items-center">
                     <span className="w-2 h-2 bg-[#D9A642] rounded-full mr-3"></span>
-                    Produtos oficiais e de qualidade premium
+                    Produtos 1:1 e de qualidade premium
                   </li>
                   <li className="font-poppins text-sm text-gray-700 flex items-center">
                     <span className="w-2 h-2 bg-[#D9A642] rounded-full mr-3"></span>
