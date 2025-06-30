@@ -204,7 +204,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
 
       {/* WhatsApp CTA - Moved up */}
       <a 
-        href={`https://wa.me/5531999999999?text=Olá! Tenho interesse na ${product.name}`}
+        href={`https://wa.me/5531990884171?text=Olá! Tenho interesse na ${product.name}`}
         className="w-full bg-[#0038A8] text-white py-3 rounded-lg font-montserrat font-bold text-base hover:bg-[#012F60] transition-colors duration-300 block text-center"
       >
         💬 Comprar no WhatsApp
@@ -230,7 +230,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
           🎉 Promoção Especial
         </p>
         <p className="font-poppins text-xs text-yellow-700">
-          Leve 3 camisas e ganhe R$ 50,00 de desconto!
+          Leve 3 camisas e ganhe R$ 50,00 de desconto + frete grátis!
         </p>
       </div>
 

@@ -94,7 +94,7 @@ const FAQ = () => {
             Não encontrou sua resposta?
           </p>
           <a 
-            href="https://wa.me/5531999999999?text=Tenho%20uma%20dúvida%20sobre%20os%20produtos"
+            href="https://wa.me/5531990884171?text=Tenho%20uma%20dúvida%20sobre%20os%20produtos"
             className="inline-block bg-[#0038A8] text-white px-6 py-3 rounded-lg font-montserrat font-bold text-sm hover:bg-[#012F60] transform hover:scale-105 transition-all duration-300 shadow-lg"
           >
             💬 Falar no WhatsApp

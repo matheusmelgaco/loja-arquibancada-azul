@@ -61,7 +61,7 @@ const Catalog = () => {
         {/* CTA */}
         <div className="text-center mt-6">
           <a 
-            href="https://wa.me/5531999999999?text=Quero%20ver%20mais%20produtos%20da%20Arquibancada%20Azul"
+            href="https://wa.me/5531990884171?text=Quero%20ver%20mais%20produtos%20da%20Arquibancada%20Azul"
             className="inline-block bg-[#D9A642] text-[#012F60] px-4 py-2 rounded-lg font-montserrat font-bold text-sm hover:bg-yellow-400 transform hover:scale-105 transition-all duration-300 shadow-lg"
           >
             💬 Ver Mais no WhatsApp

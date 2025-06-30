@@ -7,7 +7,7 @@ const PromoBannerInauguration = () => {
           <span className="text-yellow-300 text-sm">🎉</span>
           <p className="font-montserrat font-bold text-xs">
             <span className="text-yellow-300">Promoção de Inauguração!</span> 
-            {' '}Leve 3 camisas e ganhe R$ 50 de desconto.
+            {' '}Leve 3 camisas e ganhe R$ 50 de desconto + frete grátis.
           </p>
           <a 
             href="https://wa.me/5531908841719?text=Quero%20aproveitar%20a%20promoção%20de%20inauguração%20-%20Leve%203%20camisas%20e%20ganhe%20R$50%20de%20desconto"

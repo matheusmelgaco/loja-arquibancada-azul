@@ -84,7 +84,7 @@ const About = () => {
 
           <div className="text-center">
             <a 
-              href="https://wa.me/5531999999999?text=Quero%20conhecer%20mais%20sobre%20a%20Arquibancada%20Azul"
+              href="https://wa.me/5531990884171?text=Quero%20conhecer%20mais%20sobre%20a%20Arquibancada%20Azul"
               className="bg-[#0038A8] text-white px-6 py-3 rounded-lg font-montserrat font-bold text-base hover:bg-[#012F60] transform hover:scale-105 transition-all duration-300 shadow-lg inline-block"
             >
               💬 Falar Conosco no WhatsApp
