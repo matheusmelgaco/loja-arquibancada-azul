@@ -20,7 +20,7 @@ const FAQ = () => {
     },
     {
       question: 'Quais são as formas de pagamento aceitas?',
-      answer: 'Aceitamos PIX, cartões de crédito (até 12x), cartões de débito e transferência bancária. O pagamento é feito diretamente pelo WhatsApp com total segurança.'
+      answer: 'Aceitamos PIX, cartão (até 12x), débito e transferência. Pagamento 100% seguro pelo WhatsApp. Parcelamos em até 3x sem juros em compras a partir de R$ 299. Acima disso, o parcelamento pode ter acréscimo.'
     },
     {
       question: 'Como funciona a tabela de tamanhos?',

@@ -58,7 +58,7 @@ const About = () => {
             <div className="space-y-4">
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <img 
-                  src="/lovable-uploads/3cb38e33-70ba-4ac7-9cab-5d8666319fa7.png" 
+                  src={`${import.meta.env.BASE_URL}lovable-uploads/3cb38e33-70ba-4ac7-9cab-5d8666319fa7.png`}
                   alt="Torcida do Cruzeiro - Arquibancada Azul"
                   className="w-full h-48 object-cover"
                 />
@@ -74,7 +74,7 @@ const About = () => {
                   🎯 Nosso Compromisso
                 </h3>
                 <p className="font-poppins text-sm text-gray-700 leading-relaxed">
-                  Garantimos produtos autênticos, atendimento de qualidade e a emoção 
+                  Garantimos produtos de qualidade e a emoção 
                   de vestir as cores do maior de Minas. Cada compra é uma demonstração 
                   de amor ao Cruzeiro.
                 </p>
