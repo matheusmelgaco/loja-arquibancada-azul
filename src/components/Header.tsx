@@ -10,9 +10,7 @@ const Header = () => {
 
   const handleNavClick = (sectionId: string) => {
     if (location.pathname !== '/') {
-      // Navigate to home page with section hash
       navigate(`/#${sectionId}`);
-      // Small delay to ensure page loads before scrolling
       setTimeout(() => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -20,7 +18,6 @@ const Header = () => {
         }
       }, 100);
     } else {
-      // If on home page, scroll to section
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -39,6 +36,7 @@ const Header = () => {
               src={`${import.meta.env.BASE_URL}lovable-uploads/9119691e-5e48-46b0-a1cc-d31ab01f46a4.png`} 
               alt="Arquibancada Azul" 
               className="h-10 w-10"
+              loading="lazy"
             />
             <span className="font-montserrat font-bold text-lg">Arquibancada Azul</span>
           </Link>
@@ -63,8 +61,9 @@ const Header = () => {
 
           {/* WhatsApp CTA */}
           <a 
-            href="https://wa.me/5531999999999?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
+            href="https://wa.me/5531908841719?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
             className="hidden md:flex items-center bg-[#D9A642] text-[#012F60] px-4 py-2 rounded-lg font-montserrat font-bold hover:bg-yellow-400 transition-colors"
+            rel="noopener noreferrer"
           >
             💬 WhatsApp
           </a>
@@ -101,8 +100,9 @@ const Header = () => {
                 Contato
               </Link>
               <a 
-                href="https://wa.me/5531999999999?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
+                href="https://wa.me/5531908841719?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
                 className="bg-[#D9A642] text-[#012F60] px-4 py-2 rounded-lg font-montserrat font-bold text-center hover:bg-yellow-400 transition-colors"
+                rel="noopener noreferrer"
               >
                 💬 WhatsApp
               </a>

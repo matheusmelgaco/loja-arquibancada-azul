@@ -15,6 +15,7 @@ const Footer = () => {
                 src={`${import.meta.env.BASE_URL}lovable-uploads/9119691e-5e48-46b0-a1cc-d31ab01f46a4.png`} 
                 alt="Arquibancada Azul" 
                 className="h-8 w-8"
+                loading="lazy"
               />
               <div>
                 <h3 className="font-montserrat font-bold text-lg">Arquibancada Azul</h3>
@@ -76,9 +77,10 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex space-x-3">
                 <a 
-                  href="https://wa.me/5531999999999"
+                  href="https://wa.me/5531908841719"
                   className="bg-green-500 p-2 rounded-lg hover:bg-green-600 transition-colors"
                   title="WhatsApp"
+                  rel="noopener noreferrer"
                 >
                   <MessageCircle size={16} />
                 </a>
@@ -86,6 +88,8 @@ const Footer = () => {
                   href="https://instagram.com/arquibancada.azul"
                   className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-colors"
                   title="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Instagram size={16} />
                 </a>

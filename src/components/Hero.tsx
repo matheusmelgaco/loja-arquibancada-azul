@@ -17,6 +17,7 @@ const Hero = () => {
             src={`${import.meta.env.BASE_URL}lovable-uploads/9119691e-5e48-46b0-a1cc-d31ab01f46a4.png`} 
             alt="Arquibancada Azul Logo"
             className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 animate-pulse"
+            loading="lazy"
           />
         </div>
 
@@ -34,8 +35,9 @@ const Hero = () => {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
           <a 
-            href="https://wa.me/5531999999999?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
+            href="https://wa.me/5531908841719?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
             className="bg-[#D9A642] text-[#012F60] px-5 py-2.5 rounded-lg font-montserrat font-bold text-sm hover:bg-yellow-400 transform hover:scale-105 transition-all duration-300 shadow-lg"
+            rel="noopener noreferrer"
           >
             🛒 Comprar no WhatsApp
           </a>

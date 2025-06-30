@@ -33,10 +33,11 @@ const Contact = () => {
                   Nossa principal forma de atendimento. Resposta rápida e atendimento personalizado.
                 </p>
                 <a 
-                  href="https://wa.me/5531999999999"
+                  href="https://wa.me/5531908841719"
                   className="bg-[#25D366] text-white px-4 py-2 rounded-lg font-montserrat font-bold text-sm hover:bg-[#20B858] transition-colors inline-block"
+                  rel="noopener noreferrer"
                 >
-                  💬 (31) 99999-9999
+                  💬 (31) 9 0884-1719
                 </a>
               </div>
 
@@ -48,7 +49,7 @@ const Contact = () => {
                   </h3>
                 </div>
                 <p className="font-poppins text-sm text-gray-700 mb-2">
-                  <strong>(31) 99999-9999</strong>
+                  <strong>(31) 9 0884-1719</strong>
                 </p>
                 <p className="font-poppins text-xs text-gray-600">
                   Ligações e mensagens SMS
@@ -113,8 +114,9 @@ const Contact = () => {
                   Respondemos seu WhatsApp em até 30 minutos durante nosso horário de funcionamento!
                 </p>
                 <a 
-                  href="https://wa.me/5531999999999?text=Olá!%20Tenho%20interesse%20nos%20produtos%20da%20Arquibancada%20Azul"
+                  href="https://wa.me/5531908841719?text=Olá!%20Tenho%20interesse%20nos%20produtos%20da%20Arquibancada%20Azul"
                   className="bg-[#D9A642] text-[#012F60] px-4 py-2 rounded-lg font-montserrat font-bold text-sm hover:bg-yellow-400 transition-colors inline-block"
+                  rel="noopener noreferrer"
                 >
                   Começar Conversa
                 </a>

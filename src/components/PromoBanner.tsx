@@ -24,8 +24,9 @@ const PromoBanner = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a 
-            href="https://wa.me/5531999999999?text=Quero%20personalizar%20minha%20camisa%20do%20Cruzeiro%20com%20nome%20e%20número"
+            href="https://wa.me/5531908841719?text=Quero%20personalizar%20minha%20camisa%20do%20Cruzeiro%20com%20nome%20e%20número"
             className="bg-[#012F60] text-white px-6 py-3 rounded-lg font-montserrat font-bold text-lg hover:bg-[#0038A8] transform hover:scale-105 transition-all duration-300 shadow-lg"
+            rel="noopener noreferrer"
           >
             ✨ Personalizar no WhatsApp
           </a>
