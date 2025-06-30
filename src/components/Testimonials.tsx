@@ -6,19 +6,19 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      image: '/lovable-uploads/055ad840-426a-4f62-93a8-ae89ee2b2000.png',
+      image: `${import.meta.env.BASE_URL}lovable-uploads/055ad840-426a-4f62-93a8-ae89ee2b2000.png`,
       alt: 'Print do WhatsApp - Feedback do cliente João Silva'
     },
     {
-      image: '/lovable-uploads/055ad840-426a-4f62-93a8-ae89ee2b2000.png',
+      image: `${import.meta.env.BASE_URL}lovable-uploads/055ad840-426a-4f62-93a8-ae89ee2b2000.png`,
       alt: 'Print do WhatsApp - Feedback do cliente Maria Santos'
     },
     {
-      image: '/lovable-uploads/055ad840-426a-4f62-93a8-ae89ee2b2000.png',
+      image: `${import.meta.env.BASE_URL}lovable-uploads/055ad840-426a-4f62-93a8-ae89ee2b2000.png`,
       alt: 'Print do WhatsApp - Feedback do cliente Carlos Oliveira'
     },
     {
-      image: '/lovable-uploads/055ad840-426a-4f62-93a8-ae89ee2b2000.png',
+      image: `${import.meta.env.BASE_URL}lovable-uploads/055ad840-426a-4f62-93a8-ae89ee2b2000.png`,
       alt: 'Print do WhatsApp - Feedback do cliente Ana Costa'
     }
   ];

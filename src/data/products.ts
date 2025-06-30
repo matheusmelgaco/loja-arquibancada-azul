@@ -20,7 +20,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2025/26',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -42,7 +42,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: '2025/26',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -64,7 +64,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2025/26',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -86,7 +86,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 159,90',
     category: '2025/26',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -108,7 +108,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: '2025/26',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -131,7 +131,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -146,7 +146,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -161,7 +161,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -176,7 +176,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -191,7 +191,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -206,7 +206,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -221,7 +221,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -236,7 +236,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -251,7 +251,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -267,7 +267,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -282,7 +282,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -297,7 +297,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -312,7 +312,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -327,7 +327,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -342,7 +342,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -357,7 +357,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -372,7 +372,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -388,7 +388,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -403,7 +403,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -418,7 +418,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -433,7 +433,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -448,7 +448,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -463,7 +463,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -479,7 +479,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2021/22 Centenário',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -494,7 +494,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2021/22 Centenário',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -509,7 +509,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2021/22 Centenário',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -524,7 +524,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2021/22 Centenário',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -539,7 +539,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2021/22 Centenário',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -554,7 +554,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2021/22 Centenário',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -570,7 +570,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 179,90',
     category: 'Retrô',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -585,7 +585,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 179,90',
     category: 'Retrô',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -600,7 +600,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 179,90',
     category: 'Retrô',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -615,7 +615,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 179,90',
     category: 'Retrô',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -630,7 +630,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 179,90',
     category: 'Retrô',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -646,7 +646,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 309,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -661,7 +661,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 309,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -676,7 +676,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -691,7 +691,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -706,7 +706,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -721,7 +721,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -736,7 +736,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -751,7 +751,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 159,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -766,7 +766,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 159,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -781,7 +781,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -796,7 +796,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -811,7 +811,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -826,7 +826,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -842,7 +842,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 159,90',
     category: 'Infantil',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -857,7 +857,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 159,90',
     category: 'Infantil',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
@@ -872,7 +872,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 159,90',
     category: 'Infantil',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
+      `${import.meta.env.BASE_URL}lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png`,
       '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
       '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
       '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'

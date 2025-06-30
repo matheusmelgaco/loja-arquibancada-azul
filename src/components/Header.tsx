@@ -36,7 +36,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/9119691e-5e48-46b0-a1cc-d31ab01f46a4.png" 
+              src={`${import.meta.env.BASE_URL}lovable-uploads/9119691e-5e48-46b0-a1cc-d31ab01f46a4.png`} 
               alt="Arquibancada Azul" 
               className="h-10 w-10"
             />
