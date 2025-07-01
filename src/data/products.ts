@@ -43,7 +43,7 @@ export const products: Product[] = [
     category: '2025/26',
     images: [
       '/lovable-uploads/2025-26/regata-foto-1.png',
-      '/lovable-uploads/2025-26/regata-foto-2.png'
+      '/lovable-uploads/2025-26/regata-foto-2 (2).png'
     ],
     isHighlight: false,
     description: 'Regata Cruzeiro I 2025/26 Azul Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.',
@@ -64,8 +64,8 @@ export const products: Product[] = [
     images: [
       '/lovable-uploads/2025-26/Camisa-feminina-foto1.webp',
       '/lovable-uploads/2025-26/Camisa-feminina-foto2.webp',
-      '/lovable-uploads/2025-26/Camisa-feminina-foto3.webp',
-      '/lovable-uploads/2025-26/Camisa-feminina-foto4.webp'
+      '/lovable-uploads/2025-26/Camisa-masculina-foto-3.jpg',
+      '/lovable-uploads/2025-26/Camisa-masculina-foto-4.jpg'
     ],
     isHighlight: true,
     description: 'Camisa Cruzeiro I 2025/26 Azul Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Tamanhos M e G à pronta entrega. Demais tamanhos sob encomenda com entrega em até 25 dias úteis.',
@@ -106,10 +106,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: '2025/26',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2025-26/short foto 1.webp',
+      '/lovable-uploads/2025-26/short foto 2.webp'
     ],
     isHighlight: false,
     description: 'Short Cruzeiro I 2025/26 Branco Adidas Masculino - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.',
