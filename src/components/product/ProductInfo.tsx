@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Star } from 'lucide-react';
 import { Product } from '../../data/products';
@@ -202,13 +203,44 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         </div>
       </div>
 
-      {/* WhatsApp CTA - Moved up */}
+      {/* Promo Banner - igual da página inicial */}
+      <div className="bg-gradient-to-r from-red-600 to-red-500 text-white py-2 px-3 rounded-lg shadow-lg">
+        <div className="text-center">
+          <div className="flex items-center justify-center space-x-2">
+            <span className="text-yellow-300 text-sm">🎉</span>
+            <p className="font-montserrat font-bold text-xs">
+              <span className="text-yellow-300">Promoção de Inauguração!</span> 
+              {' '}Leve 3 camisas e ganhe R$ 50 de desconto + frete grátis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* WhatsApp CTA */}
       <a 
         href={`https://wa.me/5531990884171?text=Olá! Tenho interesse na ${product.name}`}
         className="w-full bg-[#0038A8] text-white py-3 rounded-lg font-montserrat font-bold text-base hover:bg-[#012F60] transition-colors duration-300 block text-center"
       >
         💬 Comprar no WhatsApp
       </a>
+
+      {/* Size Chart Button */}
+      <button
+        onClick={() => setShowSizeChart(!showSizeChart)}
+        className="w-full bg-gray-100 text-[#012F60] py-2 rounded-lg font-montserrat font-bold text-sm hover:bg-gray-200 transition-colors"
+      >
+        {showSizeChart ? 'Ocultar' : 'Ver'} {chartTitle}
+      </button>
+
+      {/* No Exchange Policy */}
+      <div className="bg-red-50 border border-red-200 p-2 rounded-lg">
+        <p className="font-montserrat font-bold text-xs text-red-800 mb-1">
+          ⚠️ Política de Trocas
+        </p>
+        <p className="font-poppins text-xs text-red-700">
+          Não fazemos trocas. Consulte a tabela de tamanhos antes da compra.
+        </p>
+      </div>
 
       <div>
         <h3 className="font-montserrat font-bold text-base text-[#012F60] mb-2">
@@ -223,34 +255,6 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
       <div className="text-xs text-gray-600 border-l-4 border-[#D9A642] pl-2">
         <p>Personalização disponível por + R$ 20,00</p>
       </div>
-
-      {/* Promo Banner */}
-      <div className="bg-yellow-50 border border-yellow-200 p-2 rounded-lg">
-        <p className="font-montserrat font-bold text-xs text-yellow-800 mb-1">
-          🎉 Promoção Especial
-        </p>
-        <p className="font-poppins text-xs text-yellow-700">
-          Leve 3 camisas e ganhe R$ 50,00 de desconto + frete grátis!
-        </p>
-      </div>
-
-      {/* No Exchange Policy */}
-      <div className="bg-red-50 border border-red-200 p-2 rounded-lg">
-        <p className="font-montserrat font-bold text-xs text-red-800 mb-1">
-          ⚠️ Política de Trocas
-        </p>
-        <p className="font-poppins text-xs text-red-700">
-          Não fazemos trocas. Consulte a tabela de tamanhos antes da compra.
-        </p>
-      </div>
-
-      {/* Size Chart Button */}
-      <button
-        onClick={() => setShowSizeChart(!showSizeChart)}
-        className="w-full bg-gray-100 text-[#012F60] py-2 rounded-lg font-montserrat font-bold text-sm hover:bg-gray-200 transition-colors"
-      >
-        {showSizeChart ? 'Ocultar' : 'Ver'} {chartTitle}
-      </button>
 
       {/* Size Chart */}
       {showSizeChart && (
