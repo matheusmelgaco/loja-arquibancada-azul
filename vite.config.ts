@@ -7,7 +7,7 @@ import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig(({ mode }) => ({
   root: '.',
-  base: mode === 'development' ? '/' : '/loja-arquibancada-azul/',
+  base: '/',
   build: {
     rollupOptions: {
       input: 'index.html',
