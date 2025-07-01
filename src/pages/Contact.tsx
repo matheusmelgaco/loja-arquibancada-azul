@@ -33,7 +33,7 @@ const Contact = () => {
                   Nossa principal forma de atendimento. Resposta rápida e atendimento personalizado.
                 </p>
                 <a 
-                  href="https://wa.me/5531908841719"
+                  href="https://wa.me/553190884171"
                   className="bg-[#25D366] text-white px-6 py-3 rounded-lg font-montserrat font-bold text-base hover:bg-[#20B858] transition-colors inline-block"
                   rel="noopener noreferrer"
                 >
@@ -112,7 +112,7 @@ const Contact = () => {
                   Respondemos seu WhatsApp em até 30 minutos durante nosso horário de funcionamento!
                 </p>
                 <a 
-                  href="https://wa.me/5531908841719?text=Olá!%20Tenho%20interesse%20nos%20produtos%20da%20Arquibancada%20Azul"
+                  href="https://wa.me/553190884171?text=Olá!%20Tenho%20interesse%20nos%20produtos%20da%20Arquibancada%20Azul"
                   className="bg-[#D9A642] text-[#012F60] px-6 py-3 rounded-lg font-montserrat font-bold text-base hover:bg-yellow-400 transition-colors inline-block"
                   rel="noopener noreferrer"
                 >

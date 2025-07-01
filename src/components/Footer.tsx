@@ -74,7 +74,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex space-x-2">
                 <a 
-                  href="https://wa.me/5531908841719"
+                  href="https://wa.me/553190884171"
                   className="bg-green-500 p-1 rounded-lg hover:bg-green-600 transition-colors"
                   title="WhatsApp"
                   rel="noopener noreferrer"

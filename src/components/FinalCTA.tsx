@@ -38,7 +38,7 @@ const FinalCTA = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <a 
-              href="https://wa.me/5531908841719?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul%20agora!"
+              href="https://wa.me/553190884171?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul%20agora!"
               className="bg-[#D9A642] text-[#012F60] px-6 py-3 rounded-xl font-montserrat font-extrabold text-base hover:bg-yellow-400 transform hover:scale-105 transition-all duration-300 shadow-2xl"
               rel="noopener noreferrer"
             >

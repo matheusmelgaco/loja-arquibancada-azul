@@ -61,7 +61,7 @@ const Header = () => {
 
           {/* WhatsApp CTA */}
           <a 
-            href="https://wa.me/5531908841719?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
+            href="https://wa.me/553190884171?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
             className="hidden md:flex items-center bg-[#D9A642] text-[#012F60] px-4 py-2 rounded-lg font-montserrat font-bold hover:bg-yellow-400 transition-colors"
             rel="noopener noreferrer"
           >
@@ -100,7 +100,7 @@ const Header = () => {
                 Contato
               </Link>
               <a 
-                href="https://wa.me/5531908841719?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
+                href="https://wa.me/553190884171?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
                 className="bg-[#D9A642] text-[#012F60] px-4 py-2 rounded-lg font-montserrat font-bold text-center hover:bg-yellow-400 transition-colors"
                 rel="noopener noreferrer"
               >

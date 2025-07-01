@@ -35,7 +35,7 @@ const Hero = () => {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
           <a 
-            href="https://wa.me/5531908841719?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
+            href="https://wa.me/553190884171?text=Quero%20meu%20manto%20da%20Arquibancada%20Azul"
             className="bg-[#D9A642] text-[#012F60] px-5 py-2.5 rounded-lg font-montserrat font-bold text-sm hover:bg-yellow-400 transform hover:scale-105 transition-all duration-300 shadow-lg"
             rel="noopener noreferrer"
           >
