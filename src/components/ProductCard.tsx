@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -25,11 +26,11 @@ const ProductCard = ({ id, name, price, originalPrice, images, category, isHighl
   return (
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group overflow-hidden cursor-pointer">
       {/* Image Gallery */}
-      <div className="relative h-32 sm:h-40 overflow-hidden">
+      <div className="relative h-32 sm:h-40 overflow-hidden bg-white">
         <img 
           src={images[currentImage]} 
           alt={name}
-          className="w-full h-full object-contain bg-gray-50 group-hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
         />
         
         {/* Navigation arrows */}

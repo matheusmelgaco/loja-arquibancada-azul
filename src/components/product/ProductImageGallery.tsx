@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -65,7 +66,7 @@ const ProductImageGallery = ({ images, name, category, isHighlight }: ProductIma
             <button
               key={index}
               onClick={() => setCurrentImage(index)}
-              className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 ${
+              className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 bg-white ${
                 currentImage === index ? 'border-[#D9A642]' : 'border-gray-200'
               }`}
             >
