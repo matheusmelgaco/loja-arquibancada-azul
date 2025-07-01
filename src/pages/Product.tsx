@@ -30,17 +30,17 @@ const Product = () => {
     <div className="min-h-screen bg-[#F7F7F5]">
       <Header />
       
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-8">
         {/* Back Button */}
         <Link 
           to="/" 
-          className="inline-flex items-center text-[#0038A8] hover:text-[#012F60] mb-4 font-montserrat font-bold text-sm"
+          className="inline-flex items-center text-[#0038A8] hover:text-[#012F60] mb-6 font-montserrat font-bold text-base"
         >
-          <ArrowLeft size={16} className="mr-1" />
+          <ArrowLeft size={18} className="mr-2" />
           Voltar ao catálogo
         </Link>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
           <ProductImageGallery 
             images={product.images}
             name={product.name}
