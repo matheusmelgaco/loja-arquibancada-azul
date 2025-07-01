@@ -203,13 +203,13 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         </div>
       </div>
 
-      {/* Promo Banner - igual da página inicial */}
-      <div className="bg-gradient-to-r from-red-600 to-red-500 text-white py-2 px-3 rounded-lg shadow-lg">
+      {/* Promo Banner - com cor azul suave */}
+      <div className="bg-gradient-to-r from-blue-100 to-blue-50 border border-blue-200 text-[#012F60] py-2 px-3 rounded-lg shadow-sm">
         <div className="text-center">
           <div className="flex items-center justify-center space-x-2">
-            <span className="text-yellow-300 text-sm">🎉</span>
+            <span className="text-[#0038A8] text-sm">🎉</span>
             <p className="font-montserrat font-bold text-xs">
-              <span className="text-yellow-300">Promoção de Inauguração!</span> 
+              <span className="text-[#0038A8]">Promoção de Inauguração!</span> 
               {' '}Leve 3 camisas e ganhe R$ 50 de desconto + frete grátis.
             </p>
           </div>
@@ -232,6 +232,11 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         {showSizeChart ? 'Ocultar' : 'Ver'} {chartTitle}
       </button>
 
+      {/* Personalization Info - movido para cima */}
+      <div className="text-xs text-gray-600 border-l-4 border-[#D9A642] pl-2">
+        <p>Personalização disponível por + R$ 20,00</p>
+      </div>
+
       {/* No Exchange Policy */}
       <div className="bg-red-50 border border-red-200 p-2 rounded-lg">
         <p className="font-montserrat font-bold text-xs text-red-800 mb-1">
@@ -249,11 +254,6 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         <p className="font-poppins text-sm text-gray-700 leading-relaxed">
           {product.description}
         </p>
-      </div>
-
-      {/* Personalization Info */}
-      <div className="text-xs text-gray-600 border-l-4 border-[#D9A642] pl-2">
-        <p>Personalização disponível por + R$ 20,00</p>
       </div>
 
       {/* Size Chart */}
