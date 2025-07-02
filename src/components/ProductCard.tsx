@@ -27,16 +27,16 @@ const ProductCard = ({ id, name, price, originalPrice, images, category, isHighl
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group overflow-hidden cursor-pointer">
       {/* Image Gallery */}
       <div className="relative h-32 sm:h-40 overflow-hidden bg-white">
-        <img 
-          src={images[currentImage]} 
+        <img
+          src={images[currentImage]}
           alt={name}
           className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
         />
-        
+
         {/* Navigation arrows */}
         {images.length > 1 && (
           <>
-            <button 
+            <button
               onClick={(e) => {
                 e.preventDefault();
                 prevImage();
@@ -45,7 +45,7 @@ const ProductCard = ({ id, name, price, originalPrice, images, category, isHighl
             >
               <ChevronLeft size={12} />
             </button>
-            <button 
+            <button
               onClick={(e) => {
                 e.preventDefault();
                 nextImage();
@@ -61,7 +61,7 @@ const ProductCard = ({ id, name, price, originalPrice, images, category, isHighl
         {images.length > 1 && (
           <div className="absolute bottom-1 left-1/2 -translate-x-1/2 flex space-x-1">
             {images.map((_, index) => (
-              <div 
+              <div
                 key={index}
                 className={`w-1.5 h-1.5 rounded-full ${index === currentImage ? 'bg-[#D9A642]' : 'bg-white/50'}`}
               />
@@ -71,7 +71,7 @@ const ProductCard = ({ id, name, price, originalPrice, images, category, isHighl
 
         {/* Category badge - smaller */}
         <div className="absolute top-1 left-1 bg-[#0038A8] text-white px-1 py-0.5 rounded text-[9px] font-montserrat font-bold">
-          {category}
+          {Array.isArray(category) ? category.join(' • ') : category}
         </div>
 
         {/* Imediato badge - smaller */}

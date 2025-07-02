@@ -24,7 +24,7 @@ const FAQ = () => {
     },
     {
       question: 'Como funciona a tabela de tamanhos?',
-      answer: 'Trabalhamos com numeração brasileira padrão (P, M, G, GG, XGG). Enviamos tabela detalhada de medidas pelo WhatsApp para garantir o tamanho perfeito.'
+      answer: 'Trabalhamos com numeração brasileira padrão (P, M, G, GG, 2GG). Enviamos tabela detalhada de medidas pelo WhatsApp para garantir o tamanho perfeito.'
     },
     {
       question: 'É possível trocar ou devolver produtos?',

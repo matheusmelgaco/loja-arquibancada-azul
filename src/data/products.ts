@@ -4,7 +4,7 @@ export interface Product {
   name: string;
   price: string;
   originalPrice: string;
-  category: string;
+  category: string | string[]; 
   images: string[];
   isHighlight: boolean;
   description: string;
@@ -62,8 +62,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2025/26',
     images: [
-      '/lovable-uploads/2025-26/Camisa-feminina-foto1.webp',
-      '/lovable-uploads/2025-26/Camisa-feminina-foto2.webp',
+      '/lovable-uploads/2025-26/Camisa-feminina-foto1.png',
+      '/lovable-uploads/2025-26/Camisa-feminina-foto2.png',
       '/lovable-uploads/2025-26/Camisa-masculina-foto-3.jpg',
       '/lovable-uploads/2025-26/Camisa-masculina-foto-4.jpg'
     ],
@@ -74,28 +74,6 @@ export const products: Product[] = [
       'Tecido 100% poliéster de alta qualidade',
       'Bordados oficiais do Cruzeiro',
       'Corte feminino ajustado',
-      'Disponível em todos os tamanhos'
-    ]
-  },
-  {
-    id: '2025-26-3',
-    name: 'Kit Uniforme Cruzeiro I 2025/26 Azul e Branco Adidas Infantil',
-    price: 'R$ 149,90',
-    originalPrice: 'R$ 159,90',
-    category: '2025/26',
-    images: [
-      '/lovable-uploads/2025-26/cruzeiro infantil 1.png',
-      '/lovable-uploads/2025-26/cruzeiro infantil 2.png',
-      '/lovable-uploads/2025-26/cruzeiro infantil 3.png',
-      '/lovable-uploads/2025-26/cruzeiro infantil 4.png'
-    ],
-    isHighlight: false,
-    description: 'Kit Uniforme Cruzeiro I 2025/26 Azul e Branco Adidas Infantil. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.',
-    features: [
-      'Tecnologia Dri-FIT para absorção do suor',
-      'Tecido 100% poliéster de alta qualidade',
-      'Bordados oficiais do Cruzeiro',
-      'Kit completo camisa + short',
       'Disponível em todos os tamanhos'
     ]
   },
@@ -119,6 +97,28 @@ export const products: Product[] = [
       'Disponível em todos os tamanhos'
     ]
   },
+     {
+    id: '2025-26-3',
+    name: 'Kit Uniforme Cruzeiro I 2025/26 Azul e Branco Adidas Infantil',
+    price: 'R$ 149,90',
+    originalPrice: 'R$ 159,90',
+    category: ['2025/26', 'Infantil'],
+    images: [
+      '/lovable-uploads/2025-26/cruzeiro infantil 1.png',
+      '/lovable-uploads/2025-26/cruzeiro infantil 2.png',
+      '/lovable-uploads/2025-26/cruzeiro infantil 3.png',
+      '/lovable-uploads/2025-26/cruzeiro infantil 4.png'
+    ],
+    isHighlight: false,
+    description: 'Kit Uniforme Cruzeiro I 2025/26 Azul e Branco Adidas Infantil. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.',
+    features: [
+      'Tecnologia Dri-FIT para absorção do suor',
+      'Tecido 100% poliéster de alta qualidade',
+      'Bordados oficiais do Cruzeiro',
+      'Kit completo camisa + short',
+      'Disponível em todos os tamanhos'
+    ]
+  },
   // 2024/25 - Apenas o primeiro com pronta entrega
   {
     id: '2024-25-1',
@@ -127,10 +127,10 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2024-25/Cruzeiro - foto 1.jpg',
+      '/lovable-uploads/2024-25/Cruzeiro - foto 2.jpg',
+      '/lovable-uploads/2024-25/Cruzeiro - foto 3.jpg',
+      '/lovable-uploads/2024-25/Cruzeiro - foto 4.jpg'
     ],
     isHighlight: true,
     description: 'Camisa Cruzeiro I 2024/25 Azul Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Tamanhos M e G à pronta entrega. Demais tamanhos sob encomenda com entrega em até 25 dias úteis.'
@@ -142,10 +142,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2024-25/Cruzeiro camisa 2 - foto 1.jpg',
+      '/lovable-uploads/2024-25/Cruzeiro camisa 2 - foto 2.jpg'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro II 2024/25 Branca Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -157,10 +155,10 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2024-25/Cruzeiro camisa 3 - foto 1.jpg',
+      '/lovable-uploads/2024-25/camisa 3 masculina foto 22.png',
+      '/lovable-uploads/2024-25/Cruzeiro camisa 3 - foto 2.jpeg',
+      '/lovable-uploads/2024-25/Cruzeiro camisa 3 - foto 3.jpeg'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro III 2024/25 Azul Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -172,25 +170,21 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2024-25/Cruzeiro_regata_foto_1-removebg-preview.png',
+      '/lovable-uploads/2024-25/Cruzeiro_regata_foto_2-removebg-preview.png',
     ],
     isHighlight: false,
     description: 'Regata Cruzeiro I 2024/25 Azul Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
   },
   {
     id: '2024-25-2-branca',
-    name: 'Camisa Cruzeiro II 2024/25 Branca Adidas Masculina - Torcedor',
+    name: 'Regata Cruzeiro II 2024/25 Branca Adidas Masculina - Torcedor',
     price: 'R$ 119,90',
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2024-25/Cruzeiro_2_regata_foto_1-removebg-preview.png',
+      '/lovable-uploads/2024-25/Cruzeiro_2_regata_foto_2-removebg-preview.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro II 2024/25 Branca Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -202,10 +196,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2024-25/camisa feminina 1.png',
+      '/lovable-uploads/2024-25/camisa feminina 2.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro I 2024/25 Azul Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -217,10 +209,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2024-25/2 camisa feminina 1.png',
+      '/lovable-uploads/2024-25/2 camisa feminina 2.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro II 2024/25 Branca Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -232,10 +222,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2024-25/3 camisa feminina 1.png',
+      '/lovable-uploads/2024-25/3 camisa feminina 2.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro III 2024/25 Azul Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -247,10 +235,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: '2024/25',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2024-25/short 2425 foto 1.png',
+      '/lovable-uploads/2024-25/short foto 2.png',
+      '/lovable-uploads/2024-25/short foto 3 2425.png'
     ],
     isHighlight: false,
     description: 'Short Cruzeiro I 2024/25 Branco Adidas Masculino - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -566,13 +553,28 @@ export const products: Product[] = [
     originalPrice: 'R$ 179,90',
     category: 'Retrô',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Retrô/retro 93 1.png',
+      '/lovable-uploads/Retrô/retro 93 2.png',
+      '/lovable-uploads/Retrô/retro 93 3.png',
+      '/lovable-uploads/Retrô/retro 93 4.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro I Retrô 1993/94 Azul Finta Masculina. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
+  },
+    {
+    id: 'retro-3',
+    name: 'Camisa Cruzeiro II Retrô 1993/94 Branca Finta Masculina',
+    price: 'R$ 169,90',
+    originalPrice: 'R$ 179,90',
+    category: 'Retrô',
+    images: [
+      '/lovable-uploads/Retrô/retro 93 branca 1.png',
+      '/lovable-uploads/Retrô/retro 93 branca 3.webp',
+      '/lovable-uploads/Retrô/retro 93 branca 2.jpg',
+      '/lovable-uploads/Retrô/retro 93 branca 4.jpg'
+    ],
+    isHighlight: false,
+    description: 'Camisa Cruzeiro II Retrô 1993/94 Branca Finta Masculina. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
   },
   {
     id: 'retro-2',
@@ -581,28 +583,13 @@ export const products: Product[] = [
     originalPrice: 'R$ 179,90',
     category: 'Retrô',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Retrô/retro 2011 1.png',
+      '/lovable-uploads/Retrô/retro 2011 2.png',
+      '/lovable-uploads/Retrô/retro 2011 3.png',
+      '/lovable-uploads/Retrô/retro 2011 4.jpg'
     ],
     isHighlight: false,
     description: 'Cruzeiro Camisa III Retrô 2011 Verde Reebok Masculina. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
-  },
-  {
-    id: 'retro-3',
-    name: 'Camisa Cruzeiro II Retrô 1993/94 Branca Finta Masculina',
-    price: 'R$ 169,90',
-    originalPrice: 'R$ 179,90',
-    category: 'Retrô',
-    images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-    ],
-    isHighlight: false,
-    description: 'Camisa Cruzeiro II Retrô 1993/94 Branca Finta Masculina. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
   },
   {
     id: 'retro-4',
@@ -642,10 +629,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 309,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Treino/Conjunto Treino 2025.png',
+      '/lovable-uploads/Treino/Conjunto treino 2025 foto 2 .png'
     ],
     isHighlight: false,
     description: 'Kit Moletom Cruzeiro Treino 2025/26 Adidas Masculino. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -657,10 +642,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 309,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Treino/Conjunto Treino 2025 Azul turquesa foto 1.png',
+      '/lovable-uploads/Treino/Conjunto Treino 2025 Azul turquesa foto 2.png'
     ],
     isHighlight: false,
     description: 'Kit Moletom Cruzeiro Treino 2025/26 Azul Turquesa Adidas Masculino. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -741,36 +724,6 @@ export const products: Product[] = [
     description: 'Short Cruzeiro Treino 2025/26 Adidas Masculino. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
   },
   {
-    id: 'treino-8',
-    name: 'Kit Uniforme Cruzeiro Treino 2025/26 Adidas Infantil',
-    price: 'R$ 149,90',
-    originalPrice: 'R$ 159,90',
-    category: 'Treino',
-    images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-    ],
-    isHighlight: false,
-    description: 'Kit Uniforme Cruzeiro Treino 2025/26 Adidas Infantil. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
-  },
-  {
-    id: 'treino-9',
-    name: 'Kit Uniforme Cruzeiro Treino 2025/26 Azul Turquesa Adidas Infantil',
-    price: 'R$ 149,90',
-    originalPrice: 'R$ 159,90',
-    category: 'Treino',
-    images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-    ],
-    isHighlight: false,
-    description: 'Kit Uniforme Cruzeiro Treino 2025/26 Azul Turquesa Adidas Infantil. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
-  },
-  {
     id: 'treino-10',
     name: 'Camisa Cruzeiro Treino 2024/25 Adidas Masculina',
     price: 'R$ 109,90',
@@ -832,31 +785,15 @@ export const products: Product[] = [
   },
   // Infantil
   {
-    id: 'infantil-1',
-    name: 'Kit Uniforme Cruzeiro I 2025/26 Azul e Branco Adidas Infantil',
-    price: 'R$ 149,90',
-    originalPrice: 'R$ 159,90',
-    category: 'Infantil',
-    images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-    ],
-    isHighlight: false,
-    description: 'Kit Uniforme Cruzeiro I 2025/26 Azul e Branco Adidas Infantil. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
-  },
-  {
     id: 'infantil-2',
     name: 'Kit Uniforme Cruzeiro Treino 2025/26 Adidas Infantil',
     price: 'R$ 149,90',
     originalPrice: 'R$ 159,90',
-    category: 'Infantil',
+    category: ['Treino', 'Infantil'],
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Infantil/kit treino infantil foto 1.png',
+      '/lovable-uploads/Infantil/kit treino infantil foto 2.png',
+      '/lovable-uploads/Infantil/kit treino infantil foto 3.png'
     ],
     isHighlight: false,
     description: 'Kit Uniforme Cruzeiro Treino 2025/26 Adidas Infantil. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -866,12 +803,11 @@ export const products: Product[] = [
     name: 'Kit Uniforme Cruzeiro Treino 2025/26 Azul Turquesa Adidas Infantil',
     price: 'R$ 149,90',
     originalPrice: 'R$ 159,90',
-    category: 'Infantil',
+    category: ['Treino', 'Infantil'],
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Infantil/kit treino infantil azul turquesa foto 1.png',
+      '/lovable-uploads/Infantil/kit treino infantil azul turquesa foto 2.png',
+      '/lovable-uploads/Infantil/kit treino infantil azul turquesa foto 3.png'
     ],
     isHighlight: false,
     description: 'Kit Uniforme Cruzeiro Treino 2025/26 Azul Turquesa Adidas Infantil. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'

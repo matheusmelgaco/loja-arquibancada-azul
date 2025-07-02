@@ -16,8 +16,8 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
     { size: 'M', chest: '71-73', width: '55-57', height: '170-176', weight: '62-78' },
     { size: 'G', chest: '73-75', width: '57-58', height: '176-182', weight: '78-83' },
     { size: 'GG', chest: '75-78', width: '58-60', height: '182-190', weight: '83-90' },
-    { size: 'XGG', chest: '78-81', width: '60-62', height: '190-195', weight: '90-97' },
-    { size: 'XXG', chest: '81-83', width: '62-64', height: '192-197', weight: '97-104' }
+    { size: '2GG', chest: '78-81', width: '60-62', height: '190-195', weight: '90-97' },
+    { size: '3GG', chest: '81-83', width: '62-64', height: '192-197', weight: '97-104' }
   ];
 
   // Tabela feminina
@@ -26,7 +26,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
     { size: 'M', chest: '63-66', width: '42-44', height: '160-165' },
     { size: 'G', chest: '66-69', width: '44-47', height: '165-170' },
     { size: 'GG', chest: '69-71', width: '47-49', height: '175-180' },
-    { size: 'EGG', chest: '71-73', width: '49-51', height: '180-185' }
+    { size: '2GG', chest: '71-73', width: '49-51', height: '180-185' }
   ];
 
   // Tabela kit moletom
@@ -35,7 +35,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
     { size: 'M', comp: '70', alt: '171-176', peso: '62-75', peito: '100', ombro: '76', calca: '101' },
     { size: 'G', comp: '72', alt: '177-182', peso: '70-80', peito: '104', ombro: '77,5', calca: '104' },
     { size: 'GG', comp: '74', alt: '183-190', peso: '81-90', peito: '106', ombro: '79', calca: '107' },
-    { size: 'EGG', comp: '76', alt: '188-195', peso: '91-100', peito: '110', ombro: '80,5', calca: '110' }
+    { size: '2GG', comp: '76', alt: '188-195', peso: '91-100', peito: '110', ombro: '80,5', calca: '110' }
   ];
 
   // Tabela infantil
@@ -53,7 +53,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
   // Determinar qual tabela usar baseado no nome do produto
   const getSizeChart = () => {
     const productName = product.name.toLowerCase();
-    
+
     if (productName.includes('feminina')) {
       return { chart: sizeChartFeminine, type: 'feminine', title: 'Tabela de Tamanhos Feminina' };
     } else if (productName.includes('kit moletom') || productName.includes('conjunto moletom')) {
@@ -209,7 +209,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
           <div className="flex items-center justify-center space-x-2">
             <span className="text-[#0038A8] text-sm">🎉</span>
             <p className="font-montserrat font-bold text-xs">
-              <span className="text-[#0038A8]">Promoção de Inauguração!</span> 
+              <span className="text-[#0038A8]">Promoção de Inauguração!</span>
               {' '}Leve 3 camisas e ganhe R$ 50 de desconto + frete grátis.
             </p>
           </div>
@@ -217,7 +217,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
       </div>
 
       {/* WhatsApp CTA */}
-      <a 
+      <a
         href={`https://wa.me/5531990884171?text=Olá! Tenho interesse na ${product.name}`}
         className="w-full bg-[#0038A8] text-white py-3 rounded-lg font-montserrat font-bold text-base hover:bg-[#012F60] transition-colors duration-300 block text-center"
       >
@@ -231,6 +231,19 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
       >
         {showSizeChart ? 'Ocultar' : 'Ver'} {chartTitle}
       </button>
+
+      {/* Size Chart */}
+      {showSizeChart && (
+        <div className="bg-white p-2 sm:p-3 rounded-lg shadow-lg">
+          <h4 className="font-montserrat font-bold text-sm text-[#012F60] mb-2">
+            {chartTitle}
+          </h4>
+          {renderSizeTable()}
+          <p className="font-poppins text-xs text-gray-600 mt-2 italic">
+            Considerar a margem de erro de 1 a 3 cm em cada medida
+          </p>
+        </div>
+      )}
 
       {/* Personalization Info - movido para cima */}
       <div className="text-xs text-gray-600 border-l-4 border-[#D9A642] pl-2">
@@ -255,19 +268,6 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
           {product.description}
         </p>
       </div>
-
-      {/* Size Chart */}
-      {showSizeChart && (
-        <div className="bg-white p-2 sm:p-3 rounded-lg shadow-lg">
-          <h4 className="font-montserrat font-bold text-sm text-[#012F60] mb-2">
-            {chartTitle}
-          </h4>
-          {renderSizeTable()}
-          <p className="font-poppins text-xs text-gray-600 mt-2 italic">
-            Considerar a margem de erro de 1 a 3 cm em cada medida
-          </p>
-        </div>
-      )}
     </div>
   );
 };

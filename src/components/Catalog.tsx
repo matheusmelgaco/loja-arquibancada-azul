@@ -14,7 +14,12 @@ const Catalog = () => {
 
   const filteredProducts = activeFilter === 'Todos' 
     ? products 
-    : products.filter(product => product.category === activeFilter);
+    : products.filter(product => {
+        if (Array.isArray(product.category)) {
+          return product.category.includes(activeFilter);
+        }
+        return product.category === activeFilter;
+      });
 
   const handleFilterChange = (filter: string) => {
     setActiveFilter(filter);
