@@ -641,7 +641,7 @@ export const products: Product[] = [
   },
   {
     id: 'treino-4',
-    name: 'Camisa Cruzeiro Treino 2025/26 Azul Turquesa AdidasMasculina',
+    name: 'Camisa Cruzeiro Treino 2025/26 Azul Turquesa Adidas Masculina',
     price: 'R$ 109,90',
     originalPrice: 'R$ 119,90',
     category: 'Treino',
