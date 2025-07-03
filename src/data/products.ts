@@ -250,10 +250,10 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+    '/lovable-uploads/2023-24/camisa-1-foto-1-masc.png',
+     '/lovable-uploads/2023-24/camisa-1-foto-2-masc.png',
+     '/lovable-uploads/2023-24/camisa1-foto-3.png',
+     '/lovable-uploads/2023-24/camisa1-foto-4.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro I 2023/24 Azul Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -265,10 +265,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+    '/lovable-uploads/2023-24/camisa2-foto1-masc.png',
+     '/lovable-uploads/2023-24/camisa-2-foto-2-masc.png',
+     '/lovable-uploads/2023-24/camisa-2-foto-3.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro II 2023/24 Branca Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -280,10 +279,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+    '/lovable-uploads/2023-24/camisa-3-foto1-masc.png',
+     '/lovable-uploads/2023-24/camisa-3-foto2-masc.png',
+     '/lovable-uploads/2023-24/camisa-3-foto3-masc.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro III 2023/24 Azul Turquesa Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -295,10 +293,10 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+    '/lovable-uploads/2023-24/foto cn 1.png',
+     '/lovable-uploads/2023-24/foto cn 2.png',
+     '/lovable-uploads/2023-24/foto cn 3.png',
+     '/lovable-uploads/2023-24/foto cn 4.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro Consciência Negra 2023/24 Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -310,10 +308,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2023-24/camisa goleiro foto 1.png',
+     '/lovable-uploads/2023-24/camisa goleiro foto 2.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro Goleiro 2023/24 Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -325,10 +321,10 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+    '/lovable-uploads/2023-24/camisa-1-foto-1-fem.png',
+     '/lovable-uploads/2023-24/camisa-1-foto-2-fem.png',
+     '/lovable-uploads/2023-24/camisa1-foto-3.png',
+     '/lovable-uploads/2023-24/camisa1-foto-4.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro I 2023/24 Azul Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -340,10 +336,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+    '/lovable-uploads/2023-24/camisa2-foto1-fem.png',
+     '/lovable-uploads/2023-24/camisa-2-foto-3.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro II 2024/25 Branca Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -355,10 +349,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+    '/lovable-uploads/2023-24/camisa-3-foto1-fem.png',
+    '/lovable-uploads/2023-24/camisa-3-foto2-fem.png',
+    '/lovable-uploads/2023-24/camisa-3-foto3-fem.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro III 2024/25 Azul Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -371,10 +364,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+    '/lovable-uploads/2022-23/camisa1-foto1-masc.png',
+    '/lovable-uploads/2022-23/camisa1-foto2-masc.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro I 2022/23 Azul Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -386,10 +377,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+    '/lovable-uploads/2022-23/camisa2-foto1-masc.png',
+    '/lovable-uploads/2022-23/camisa2-foto2-masc.png',
+    '/lovable-uploads/2022-23/camisa2-foto-3.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro II 2022/23 Branca Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -401,10 +391,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+    '/lovable-uploads/2022-23/camisa3-foto1-masc.png',
+    '/lovable-uploads/2022-23/camisa3-foto2-masc.png',
+    '/lovable-uploads/2022-23/camisa3-foto3-masc.png',
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro III 2022/23 Amarela Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -416,11 +405,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-    ],
+    '/lovable-uploads/2022-23/camisa1-foto1-fem.png'
+      ],
     isHighlight: false,
     description: 'Camisa Cruzeiro I 2022/23 Azul Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
   },
@@ -431,10 +417,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+    '/lovable-uploads/2022-23/camisa2-foto1-fem.png',
+    '/lovable-uploads/2022-23/camisa2-foto2-fem.png',
+    '/lovable-uploads/2022-23/camisa2-foto-3.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro II 2022/23 Branca Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -446,10 +431,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+    '/lovable-uploads/2022-23/camisa3-foto1-fem.png',
+    '/lovable-uploads/2022-23/camisa3-foto2-fem.png',
+    '/lovable-uploads/2022-23/camisa3-foto3-fem.png'
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro III 2022/23 Amarela Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -462,10 +446,11 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2021/22 Centenário',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2021-20/camisa 1 foto 1.webp',
+      '/lovable-uploads/2021-20/camisa 1 foto 2.webp',
+      '/lovable-uploads/2021-20/camisa 1 foto 3.jpg',
+      '/lovable-uploads/2021-20/camisa 1 foto 4.avif',
+     '/lovable-uploads/2021-20/camisa 1 foto 5.jpg',
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro I 2021/22 Centenário Azul Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -477,10 +462,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2021/22 Centenário',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2021-20/camisa 2 foto 1.webp',
+      '/lovable-uploads/2021-20/camisa 2 foto 2.webp',
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro II 2021/22 Centenário Branca Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -492,10 +475,10 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2021/22 Centenário',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2021-20/camisa 3 foto 1.avif',
+      '/lovable-uploads/2021-20/camisa 3 foto 2.avif',
+      '/lovable-uploads/2021-20/camisa 3 foto 3.avif',
+      '/lovable-uploads/2021-20/camisa 3 foto 4.webp',
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro III 2021/22 Centenário Verde Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -507,10 +490,10 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2021/22 Centenário',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2021-20/camisa feminina 1 foto 1.webp',
+      '/lovable-uploads/2021-20/camisa feminina 1 foto 2.webp',
+      '/lovable-uploads/2021-20/camisa feminina 1 foto 3.webp',
+      '/lovable-uploads/2021-20/camisa feminina 1 foto 4.webp',
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro I 2021/22 Centenário Azul Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -522,10 +505,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2021/22 Centenário',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2021-20/camisa feminina 2 foto 1.webp',
+      '/lovable-uploads/2021-20/camisa feminina 2 foto 2.webp',
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro II 2021/22 Centenário Branca Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -537,10 +518,10 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2021/22 Centenário',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/2021-20/camisa feminina 3 foto 1.webp',
+      '/lovable-uploads/2021-20/camisa feminina 3 foto 2.webp',
+      '/lovable-uploads/2021-20/camisa feminina 3 foto 3.webp',
+      '/lovable-uploads/2021-20/camisa feminina 3 foto 4.webp',
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro III 2021/22 Centenário Verde Adidas Feminina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -592,35 +573,32 @@ export const products: Product[] = [
     description: 'Cruzeiro Camisa III Retrô 2011 Verde Reebok Masculina. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
   },
   {
-    id: 'retro-4',
-    name: 'Camisa Cruzeiro II 2020/21 Branca Adidas Masculina - Torcedor',
-    price: 'R$ 169,90',
-    originalPrice: 'R$ 179,90',
-    category: 'Retrô',
-    images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-    ],
-    isHighlight: false,
-    description: 'Camisa Cruzeiro II 2020/21 Branca Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
-  },
-  {
     id: 'retro-5',
     name: 'Camisa Cruzeiro I 2020/21 Azul Adidas Masculina - Torcedor',
     price: 'R$ 169,90',
     originalPrice: 'R$ 179,90',
     category: 'Retrô',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Retrô/camisa retro 2020 foto 1-azul.png',
+      '/lovable-uploads/Retrô/camisa retro 2020 foto 2-azul.png',
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro I 2020/21 Azul Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
   },
+  {
+    id: 'retro-4',
+    name: 'Camisa Cruzeiro II 2020/21 Branca Adidas Masculina - Torcedor',
+    price: 'R$ 169,90',
+    originalPrice: 'R$ 179,90',
+    category: 'Retrô',
+    images: [
+       '/lovable-uploads/Retrô/camisa retro 2020 foto 1-branca.png',
+      '/lovable-uploads/Retrô/camisa retro 2020 foto 2-branca.png',
+    ],
+    isHighlight: false,
+    description: 'Camisa Cruzeiro II 2020/21 Branca Adidas Masculina - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
+  },
+
   // Treino
   {
     id: 'treino-1',
@@ -655,10 +633,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Treino/cruzeiro treino normal foto 1.png',
+      '/lovable-uploads/Treino/cruzeiro treino normal foto 2.png',
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro Treino 2025/26 Adidas Masculina. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -670,10 +646,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Treino/cruzeiro treino azul turquesa foto 1.png',
+      '/lovable-uploads/Treino/cruzeiro treino azul turquesa foto 2.png',
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro Treino 2025/26 Azul Turquesa Adidas Masculina. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -685,10 +659,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Treino/camisa treino foto 1.png',
     ],
     isHighlight: false,
     description: 'Regata Cruzeiro Treino 2025/26 Adidas Masculina. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -700,10 +671,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Treino/cruzeiro treino turquesa foto 1 regata.png',
+      '/lovable-uploads/Treino/cruzeiro treino turquesa foto 2 regata.png',
     ],
     isHighlight: false,
     description: 'Regata Cruzeiro Treino 2025/26 Azul Turquesa Adidas Masculina. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -715,10 +684,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Treino/short-treino-2025.png',
     ],
     isHighlight: false,
     description: 'Short Cruzeiro Treino 2025/26 Adidas Masculino. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -730,10 +696,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Treino/camisa treino 2024 foto 1.png',
+      '/lovable-uploads/Treino/camisa treino 2024 foto 2.png',
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro Treino 2024/25 Adidas Masculina. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -745,28 +709,11 @@ export const products: Product[] = [
     originalPrice: 'R$ 109,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Treino/short treino 2024 foto 1.png',
+      '/lovable-uploads/Treino/short treino 2024 foto 2.png',
     ],
     isHighlight: false,
     description: 'Short Cruzeiro Treino 2024/25 Adidas Masculino. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
-  },
-  {
-    id: 'treino-12',
-    name: 'Camisa Cruzeiro Treino 2024/25 Adidas Masculina',
-    price: 'R$ 109,90',
-    originalPrice: 'R$ 119,90',
-    category: 'Treino',
-    images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
-    ],
-    isHighlight: false,
-    description: 'Camisa Cruzeiro Treino 2024/25 Adidas Masculina. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
   },
   {
     id: 'treino-13',
@@ -775,10 +722,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: 'Treino',
     images: [
-      '/lovable-uploads/adec6b18-4bf0-4160-b02f-4b37ad3e4154.png',
-      '/lovable-uploads/af6dcee0-9dac-4ef1-9722-b12a7f4355f4.png',
-      '/lovable-uploads/f97099a2-eab1-4c05-8b03-11b958df25c9.png',
-      '/lovable-uploads/0f03725b-4473-495a-8539-de67cb2cffdb.png'
+      '/lovable-uploads/Treino/camisa treino 2024 foto 1 laranja.png',
+      '/lovable-uploads/Treino/cruzeiro treino 2024 laranja foto 2.png',
     ],
     isHighlight: false,
     description: 'Camisa Cruzeiro Treino 2024/25 Laranja Adidas Masculina. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
