@@ -15,9 +15,6 @@ const Testimonials = () => {
 
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
-  // Só inicia o efeito se houver mais de 1 depoimento
-  // Isso evita o looping desnecessário
-  // Pode reativar automaticamente quando houver mais
   useEffect(() => {
     if (testimonials.length > 1) {
       const interval = setInterval(() => {
@@ -40,7 +37,7 @@ const Testimonials = () => {
         </div>
 
         <div className="max-w-md mx-auto">
-          <div className="bg-white rounded-lg p-4 shadow-lg relative">
+          <div className="bg-[#F3F3F3] rounded-xl p-4 shadow-lg">
             <div className="text-center">
               <img 
                 src={testimonials[currentTestimonial].image}
