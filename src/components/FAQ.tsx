@@ -16,11 +16,11 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'Como funcionam os prazos de entrega?',
-      answer: 'Para produtos em pronta-entrega, enviamos em até 24h úteis. Para encomendas personalizadas, o prazo é de até 25 dias úteis.'
+      answer: 'Para produtos em pronta-entrega, enviamos em até 24h úteis. Para produtos sob encomenda, o prazo é de até 25 dias úteis.'
     },
     {
       question: 'Quais são as formas de pagamento aceitas?',
-      answer: 'Aceitamos PIX, cartão (até 12x), débito e transferência. Pagamento 100% seguro pelo WhatsApp. Parcelamos em até 3x sem juros em compras a partir de R$ 299. Acima disso, o parcelamento pode ter acréscimo.'
+      answer: 'Aceitamos PIX (5% de desconto) e cartão (até 12x com acréscimo).'
     },
     {
       question: 'Como funciona a tabela de tamanhos?',
@@ -44,7 +44,7 @@ const FAQ = () => {
     },
     {
       question: 'Posso acompanhar meu pedido?',
-      answer: 'Claro! Após o envio, você recebe o código de rastreamento pelo WhatsApp para acompanhar sua encomenda em tempo real.'
+      answer: 'Claro! Após o pagamento, você recebe o código de rastreamento pelo WhatsApp para acompanhar sua encomenda em tempo real.'
     }
   ];
 
