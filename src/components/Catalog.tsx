@@ -10,7 +10,7 @@ const Catalog = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const ITEMS_PER_PAGE = 8;
 
-  const filters = ['Todos', '2025/26', '2024/25', '2023/24', '2022/23', '2021/22 Centenário', 'Retrô', 'Infantil', 'Treino'];
+  const filters = ['Todos', '2025/26', '2024/25', '2023/24', '2022/23', '2021/22 Centenário', 'Retrô', 'Infantil', 'Treino', 'Agasalho'];
 
   const filteredProducts = activeFilter === 'Todos' 
     ? products 

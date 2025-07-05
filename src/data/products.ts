@@ -4,7 +4,7 @@ export interface Product {
   name: string;
   price: string;
   originalPrice: string;
-  category: string | string[]; 
+  category: string | string[];
   images: string[];
   isHighlight: boolean;
   description: string;
@@ -97,7 +97,7 @@ export const products: Product[] = [
       'Disponível em todos os tamanhos'
     ]
   },
-     {
+  {
     id: '2025-26-3',
     name: 'Kit Uniforme Infantil I 2025/26 Azul e Branco Adidas',
     price: 'R$ 149,90',
@@ -250,10 +250,10 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-    '/lovable-uploads/2023-24/camisa-1-foto-1-masc.png',
-     '/lovable-uploads/2023-24/camisa-1-foto-2-masc.png',
-     '/lovable-uploads/2023-24/camisa1-foto-3.png',
-     '/lovable-uploads/2023-24/camisa1-foto-4.png'
+      '/lovable-uploads/2023-24/camisa-1-foto-1-masc.png',
+      '/lovable-uploads/2023-24/camisa-1-foto-2-masc.png',
+      '/lovable-uploads/2023-24/camisa1-foto-3.png',
+      '/lovable-uploads/2023-24/camisa1-foto-4.png'
     ],
     isHighlight: false,
     description: 'Camisa Masculina I 2023/24 Azul Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -265,9 +265,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-    '/lovable-uploads/2023-24/camisa2-foto1-masc.png',
-     '/lovable-uploads/2023-24/camisa-2-foto-2-masc.png',
-     '/lovable-uploads/2023-24/camisa-2-foto-3.png'
+      '/lovable-uploads/2023-24/camisa2-foto1-masc.png',
+      '/lovable-uploads/2023-24/camisa-2-foto-2-masc.png',
+      '/lovable-uploads/2023-24/camisa-2-foto-3.png'
     ],
     isHighlight: false,
     description: 'Camisa Masculina II 2023/24 Branca Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -279,9 +279,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-    '/lovable-uploads/2023-24/camisa-3-foto1-masc.png',
-     '/lovable-uploads/2023-24/camisa-3-foto2-masc.png',
-     '/lovable-uploads/2023-24/camisa-3-foto3-masc.png'
+      '/lovable-uploads/2023-24/camisa-3-foto1-masc.png',
+      '/lovable-uploads/2023-24/camisa-3-foto2-masc.png',
+      '/lovable-uploads/2023-24/camisa-3-foto3-masc.png'
     ],
     isHighlight: false,
     description: 'Camisa Masculina III 2023/24 Azul Turquesa Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -293,10 +293,10 @@ export const products: Product[] = [
     originalPrice: 'R$ 119,90',
     category: '2023/24',
     images: [
-    '/lovable-uploads/2023-24/foto cn 1.png',
-     '/lovable-uploads/2023-24/foto cn 2.png',
-     '/lovable-uploads/2023-24/foto cn 3.png',
-     '/lovable-uploads/2023-24/foto cn 4.png'
+      '/lovable-uploads/2023-24/foto cn 1.png',
+      '/lovable-uploads/2023-24/foto cn 2.png',
+      '/lovable-uploads/2023-24/foto cn 3.png',
+      '/lovable-uploads/2023-24/foto cn 4.png'
     ],
     isHighlight: false,
     description: 'Camisa Masculina Consciência Negra 2023/24 Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -309,7 +309,7 @@ export const products: Product[] = [
     category: '2023/24',
     images: [
       '/lovable-uploads/2023-24/camisa goleiro foto 1.png',
-     '/lovable-uploads/2023-24/camisa goleiro foto 2.png'
+      '/lovable-uploads/2023-24/camisa goleiro foto 2.png'
     ],
     isHighlight: false,
     description: 'Camisa Masculina Goleiro 2023/24 Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -321,10 +321,10 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-    '/lovable-uploads/2023-24/camisa-1-foto-1-fem.png',
-     '/lovable-uploads/2023-24/camisa-1-foto-2-fem.png',
-     '/lovable-uploads/2023-24/camisa1-foto-3.png',
-     '/lovable-uploads/2023-24/camisa1-foto-4.png'
+      '/lovable-uploads/2023-24/camisa-1-foto-1-fem.png',
+      '/lovable-uploads/2023-24/camisa-1-foto-2-fem.png',
+      '/lovable-uploads/2023-24/camisa1-foto-3.png',
+      '/lovable-uploads/2023-24/camisa1-foto-4.png'
     ],
     isHighlight: false,
     description: 'Camisa Feminina I 2023/24 Azul Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -336,8 +336,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-    '/lovable-uploads/2023-24/camisa2-foto1-fem.png',
-     '/lovable-uploads/2023-24/camisa-2-foto-3.png'
+      '/lovable-uploads/2023-24/camisa2-foto1-fem.png',
+      '/lovable-uploads/2023-24/camisa-2-foto-3.png'
     ],
     isHighlight: false,
     description: 'Camisa Feminina II 2024/25 Branca Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -349,9 +349,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 129,90',
     category: '2023/24',
     images: [
-    '/lovable-uploads/2023-24/camisa-3-foto1-fem.png',
-    '/lovable-uploads/2023-24/camisa-3-foto2-fem.png',
-    '/lovable-uploads/2023-24/camisa-3-foto3-fem.png'
+      '/lovable-uploads/2023-24/camisa-3-foto1-fem.png',
+      '/lovable-uploads/2023-24/camisa-3-foto2-fem.png',
+      '/lovable-uploads/2023-24/camisa-3-foto3-fem.png'
     ],
     isHighlight: false,
     description: 'Camisa Feminina III 2024/25 Azul Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -364,8 +364,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-    '/lovable-uploads/2022-23/camisa1-foto1-masc.png',
-    '/lovable-uploads/2022-23/camisa1-foto2-masc.png'
+      '/lovable-uploads/2022-23/camisa1-foto1-masc.png',
+      '/lovable-uploads/2022-23/camisa1-foto2-masc.png'
     ],
     isHighlight: false,
     description: 'Camisa Masculina I 2022/23 Azul Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -377,9 +377,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-    '/lovable-uploads/2022-23/camisa2-foto1-masc.png',
-    '/lovable-uploads/2022-23/camisa2-foto2-masc.png',
-    '/lovable-uploads/2022-23/camisa2-foto-3.png'
+      '/lovable-uploads/2022-23/camisa2-foto1-masc.png',
+      '/lovable-uploads/2022-23/camisa2-foto2-masc.png',
+      '/lovable-uploads/2022-23/camisa2-foto-3.png'
     ],
     isHighlight: false,
     description: 'Camisa Masculina II 2022/23 Branca Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -391,9 +391,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-    '/lovable-uploads/2022-23/camisa3-foto1-masc.png',
-    '/lovable-uploads/2022-23/camisa3-foto2-masc.png',
-    '/lovable-uploads/2022-23/camisa3-foto3-masc.png',
+      '/lovable-uploads/2022-23/camisa3-foto1-masc.png',
+      '/lovable-uploads/2022-23/camisa3-foto2-masc.png',
+      '/lovable-uploads/2022-23/camisa3-foto3-masc.png',
     ],
     isHighlight: false,
     description: 'Camisa Masculina III 2022/23 Amarela Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -405,8 +405,8 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-    '/lovable-uploads/2022-23/camisa1-foto1-fem.png'
-      ],
+      '/lovable-uploads/2022-23/camisa1-foto1-fem.png'
+    ],
     isHighlight: false,
     description: 'Camisa Feminina I 2022/23 Azul Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
   },
@@ -417,9 +417,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-    '/lovable-uploads/2022-23/camisa2-foto1-fem.png',
-    '/lovable-uploads/2022-23/camisa2-foto2-fem.png',
-    '/lovable-uploads/2022-23/camisa2-foto-3.png'
+      '/lovable-uploads/2022-23/camisa2-foto1-fem.png',
+      '/lovable-uploads/2022-23/camisa2-foto2-fem.png',
+      '/lovable-uploads/2022-23/camisa2-foto-3.png'
     ],
     isHighlight: false,
     description: 'Camisa Feminina II 2022/23 Branca Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -431,9 +431,9 @@ export const products: Product[] = [
     originalPrice: 'R$ 139,90',
     category: '2022/23',
     images: [
-    '/lovable-uploads/2022-23/camisa3-foto1-fem.png',
-    '/lovable-uploads/2022-23/camisa3-foto2-fem.png',
-    '/lovable-uploads/2022-23/camisa3-foto3-fem.png'
+      '/lovable-uploads/2022-23/camisa3-foto1-fem.png',
+      '/lovable-uploads/2022-23/camisa3-foto2-fem.png',
+      '/lovable-uploads/2022-23/camisa3-foto3-fem.png'
     ],
     isHighlight: false,
     description: 'Camisa Feminina III 2022/23 Amarela Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -450,7 +450,7 @@ export const products: Product[] = [
       '/lovable-uploads/2021-20/camisa 1 foto 2.webp',
       '/lovable-uploads/2021-20/camisa 1 foto 3.jpg',
       '/lovable-uploads/2021-20/camisa 1 foto 4.avif',
-     '/lovable-uploads/2021-20/camisa 1 foto 5.jpg',
+      '/lovable-uploads/2021-20/camisa 1 foto 5.jpg',
     ],
     isHighlight: false,
     description: 'Camisa Masculina I 2021/22 Centenário Azul Adidas - Torcedor. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
@@ -542,7 +542,7 @@ export const products: Product[] = [
     isHighlight: false,
     description: 'Camisa Masculina I Retrô 1993/94 Azul Finta. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
   },
-    {
+  {
     id: 'retro-3',
     name: 'Camisa Masculina II Retrô 1993/94 Branca Finta',
     price: 'R$ 169,90',
@@ -592,7 +592,7 @@ export const products: Product[] = [
     originalPrice: 'R$ 179,90',
     category: 'Retrô',
     images: [
-       '/lovable-uploads/Retrô/camisa retro 2020 foto 1-branca.png',
+      '/lovable-uploads/Retrô/camisa retro 2020 foto 1-branca.png',
       '/lovable-uploads/Retrô/camisa retro 2020 foto 2-branca.png',
     ],
     isHighlight: false,
@@ -605,7 +605,7 @@ export const products: Product[] = [
     name: 'Kit Moletom Masculino Treino 2025/26 Adidas',
     price: 'R$ 299,90',
     originalPrice: 'R$ 309,90',
-    category: 'Treino',
+    category: ['Treino', 'Agasalho'],
     images: [
       '/lovable-uploads/Treino/Conjunto Treino 2025.png',
       '/lovable-uploads/Treino/Conjunto treino 2025 foto 2 .png'
@@ -618,7 +618,7 @@ export const products: Product[] = [
     name: 'Kit Moletom Masculino Treino 2025/26 Azul Turquesa Adidas',
     price: 'R$ 299,90',
     originalPrice: 'R$ 309,90',
-    category: 'Treino',
+    category: ['Treino', 'Agasalho'],
     images: [
       '/lovable-uploads/Treino/Conjunto Treino 2025 Azul turquesa foto 1.png',
       '/lovable-uploads/Treino/Conjunto Treino 2025 Azul turquesa foto 2.png'
@@ -756,5 +756,67 @@ export const products: Product[] = [
     ],
     isHighlight: false,
     description: 'Kit Uniforme Infantil Treino 2025/26 Azul Turquesa Adidas. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
+  },
+  // Agasalho
+  {
+    id: 'corta-vento-2017-umbro',
+    name: 'Jaqueta Corta-Vento 2017/18 Azul Umbro',
+    price: 'R$ 199,90',
+    originalPrice: 'R$ 209,90',
+    category: ['Agasalho'],
+    images: [
+      '/lovable-uploads/Agasalho/jaqueta-corta-vento-umbro-2017-foto-1.png',
+      '/lovable-uploads/Agasalho/jaqueta-corta-vento-umbro-2017-foto-2.png',
+      '/lovable-uploads/Agasalho/jaqueta-corta-vento-umbro-2017-foto-3.png',
+      '/lovable-uploads/Agasalho/jaqueta-corta-vento-umbro-2017-foto-4.jpeg'
+    ],
+    isHighlight: false,
+    description: 'Jaqueta Corta-Vento 2017/18 Azul Umbro. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
+  },
+  {
+    id: 'corta-vento-2024-adidas',
+    name: 'Jaqueta Corta-Vento 2024/25 Azul Royal Adidas',
+    price: 'R$ 199,90',
+    originalPrice: 'R$ 209,90',
+    category: ['Agasalho'],
+    images: [
+      '/lovable-uploads/Agasalho/jaqueta-corta-vento-adidas-marinho-foto-1.png',
+      '/lovable-uploads/Agasalho/jaqueta-corta-vento-adidas-marinho-foto-2.png',
+      '/lovable-uploads/Agasalho/jaqueta-corta-vento-adidas-marinho-foto-3.png',
+      '/lovable-uploads/Agasalho/jaqueta-corta-vento-adidas-marinho-foto-4.jpeg',
+    ],
+    isHighlight: false,
+    description: 'Jaqueta Corta-Vento 2024/25 Azul Royal Adidas. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
+  },
+  {
+    id: 'corta-vento-2023-celeste',
+    name: 'Jaqueta Corta-Vento 2022/23 Azul Marinho e Celeste Adidas',
+    price: 'R$ 199,90',
+    originalPrice: 'R$ 209,90',
+    category: ['Agasalho'],
+    images: [
+      '/lovable-uploads/Agasalho/jaqueta-corta-vento-adidas-celeste-foto-1.png',
+      '/lovable-uploads/Agasalho/jaqueta-corta-vento-adidas-celeste-foto-2.png',
+      '/lovable-uploads/Agasalho/jaqueta-corta-vento-adidas-celeste-foto-3.jpg',
+      '/lovable-uploads/Agasalho/jaqueta-corta-vento-adidas-celeste-foto-4.jpg',
+
+    ],
+    isHighlight: false,
+    description: 'Jaqueta Corta-Vento 2022/23 Azul Marinho e Celeste Adidas. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
+  },
+  {
+    id: 'moletom-2025-azul',
+    name: 'Jaqueta Moletom Treino 2023/24 Azul Marinho Adidas',
+    price: 'R$ 199,90',
+    originalPrice: 'R$ 209,90',
+    category: ['Agasalho'],
+    images: [
+      '/lovable-uploads/Agasalho/jaqueta-moletom-treino-foto-1.png',
+      '/lovable-uploads/Agasalho/jaqueta-moletom-treino-foto-2.png',
+      '/lovable-uploads/Agasalho/jaqueta-moletom-treino-foto-3.png',
+      '/lovable-uploads/Agasalho/jaqueta-moletom-treino-foto-4.jpeg',
+    ],
+    isHighlight: false,
+    description: 'Jaqueta Moletom Treino 2023/24 Azul Marinho Adidas. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
   }
 ];
