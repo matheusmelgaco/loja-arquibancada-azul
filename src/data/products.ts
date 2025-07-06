@@ -38,8 +38,8 @@ export const products: Product[] = [
   {
     id: '2025-26-1-regata',
     name: 'Regata Masculina I 2025/26 Azul Adidas - Torcedor',
-    price: 'R$ 99,90',
-    originalPrice: 'R$ 109,90',
+    price: 'R$ 109,90',
+    originalPrice: 'R$ 119,90',
     category: '2025/26',
     images: [
       '/lovable-uploads/2025-26/regata-foto-1.png',
@@ -166,8 +166,8 @@ export const products: Product[] = [
   {
     id: '2024-25-3-regata',
     name: 'Regata Masculina I 2024/25 Azul Adidas - Torcedor',
-    price: 'R$ 99,90',
-    originalPrice: 'R$ 109,90',
+    price: 'R$ 109,90',
+    originalPrice: 'R$ 119,90',
     category: '2024/25',
     images: [
       '/lovable-uploads/2024-25/Cruzeiro_regata_foto_1-removebg-preview.png',
@@ -179,8 +179,8 @@ export const products: Product[] = [
   {
     id: '2024-25-2-branca',
     name: 'Regata Masculina II 2024/25 Branca Adidas - Torcedor',
-    price: 'R$ 119,90',
-    originalPrice: 'R$ 129,90',
+    price: 'R$ 109,90',
+    originalPrice: 'R$ 119,90',
     category: '2024/25',
     images: [
       '/lovable-uploads/2024-25/Cruzeiro_2_regata_foto_1-removebg-preview.png',
@@ -559,7 +559,7 @@ export const products: Product[] = [
   },
   {
     id: 'retro-2',
-    name: 'Cruzeiro Masculina III Retrô 2011 Verde Reebok',
+    name: 'Camisa Masculina III Retrô 2011 Verde Reebok',
     price: 'R$ 169,90',
     originalPrice: 'R$ 179,90',
     category: 'Retrô',
@@ -570,7 +570,7 @@ export const products: Product[] = [
       '/lovable-uploads/Retrô/retro 2011 4.jpg'
     ],
     isHighlight: false,
-    description: 'Cruzeiro Masculina III Retrô 2011 Verde Reebok. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
+    description: 'Camisa Masculina III Retrô 2011 Verde Reebok. Qualidade premium 1:1 com material de alta qualidade. Todos os tamanhos disponíveis por encomenda, com prazo de entrega de até 25 dias úteis.'
   },
   {
     id: 'retro-5',
@@ -655,8 +655,8 @@ export const products: Product[] = [
   {
     id: 'treino-5',
     name: 'Regata Masculina Treino 2025/26 Adidas',
-    price: 'R$ 99,90',
-    originalPrice: 'R$ 109,90',
+    price: 'R$ 109,90',
+    originalPrice: 'R$ 119,90',
     category: 'Treino',
     images: [
       '/lovable-uploads/Treino/camisa treino foto 1.png',
@@ -667,8 +667,8 @@ export const products: Product[] = [
   {
     id: 'treino-6',
     name: 'Regata Masculina Treino 2025/26 Azul Turquesa Adidas',
-    price: 'R$ 99,90',
-    originalPrice: 'R$ 109,90',
+    price: 'R$ 109,90',
+    originalPrice: 'R$ 119,90',
     category: 'Treino',
     images: [
       '/lovable-uploads/Treino/cruzeiro treino turquesa foto 1 regata.png',
