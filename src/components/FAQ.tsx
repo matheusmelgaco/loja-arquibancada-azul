@@ -20,7 +20,7 @@ const FAQ = () => {
     },
     {
       question: 'Quais são as formas de pagamento aceitas?',
-      answer: 'Aceitamos PIX, cartão (até 12x), débito e transferência. Pagamento 100% seguro pelo WhatsApp. Parcelamos em até 3x sem juros em compras a partir de R$ 299. Acima disso, o parcelamento pode ter acréscimo.'
+      answer: 'Aceitamos PIX com 5% de desconto, cartão (até 12x com acréscimo) e pagamento 100% seguro pelo WhatsApp.'
     },
     {
       question: 'Como funciona a tabela de tamanhos?',
