@@ -210,7 +210,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
             <span className="text-[#0038A8] text-sm">🎉</span>
             <p className="font-montserrat font-bold text-xs">
               <span className="text-[#0038A8]">Promoção de Inauguração!</span>
-              {' '}Leve 3 camisas e ganhe R$ 50 de desconto + frete grátis.
+              {' '}Leve 3 camisas e ganhe R$ 50 de desconto.
             </p>
           </div>
         </div>

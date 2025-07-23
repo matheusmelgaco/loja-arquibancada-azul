@@ -11,7 +11,7 @@ const PromoBannerInauguration = () => {
           <span className="text-[#094BAC] text-sm">🎉</span>
           <p className="font-montserrat font-bold text-xs">
             <span className="text-[#094BAC]">Promoção de Inauguração!</span> 
-            {' '}Leve 3 camisas e ganhe R$ 50 de desconto + frete grátis.
+            {' '}Leve 3 camisas e ganhe R$ 50 de desconto.
           </p>
         </a>
       </div>
