@@ -227,7 +227,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
       {/* Size Chart Button */}
       <button
         onClick={() => setShowSizeChart(!showSizeChart)}
-        className="w-full bg-gray-100 text-[#012F60] py-2 rounded-lg font-montserrat font-bold text-sm hover:bg-gray-200 transition-colors"
+        className="w-full bg-[#e5f0ff] text-[#0038A8] py-2 rounded-lg font-montserrat font-bold text-sm border border-[#c8d7f0] hover:bg-[#d4e6ff] transition-colors"
       >
         {showSizeChart ? 'Ocultar' : 'Ver'} {chartTitle}
       </button>
