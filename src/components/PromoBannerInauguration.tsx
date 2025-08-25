@@ -5,12 +5,17 @@ const PromoBannerInauguration = () => {
       <div className="container mx-auto text-center max-w-6xl">
         <a 
           href="https://wa.me/553190884171?text=Quero%20aproveitar%20a%20promoção%20-%20Leve%203%20camisas%20e%20ganhe%20frete%20grátis"
-          className="flex items-center justify-center space-x-2 hover:opacity-80 transition-opacity cursor-pointer"
+          className="flex flex-col items-center justify-center hover:opacity-80 transition-opacity cursor-pointer"
           rel="noopener noreferrer"
         >
-          <span className="text-[#094BAC] text-sm">🎉</span>
-          <p className="font-montserrat font-bold text-xs">
-            Leve 3 camisas e ganhe <span className="text-[#094BAC]">frete grátis</span>.
+          <div className="flex items-center justify-center space-x-2">
+            <span className="text-[#094BAC] text-sm">🎉</span>
+            <p className="font-montserrat font-bold text-xs">
+              Leve 3 camisas e ganhe <span className="text-[#094BAC]">frete grátis</span>.
+            </p>
+          </div>
+          <p className="text-[10px] text-gray-600 mt-1 italic">
+            *Promoção não aplicável a produtos à pronta entrega.
           </p>
         </a>
       </div>

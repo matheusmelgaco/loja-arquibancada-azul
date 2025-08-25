@@ -212,6 +212,9 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
               Leve 3 camisas e ganhe <span className="text-[#0038A8]">frete grátis</span>.
             </p>
           </div>
+          <p className="text-[10px] text-gray-600 mt-1 italic">
+            *Promoção não aplicável a produtos à pronta entrega.
+          </p>
         </div>
       </div>
 
